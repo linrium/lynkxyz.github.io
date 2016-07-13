@@ -1097,15 +1097,6 @@ img {
     width: 45% !important;
     margin: 0 5px 8px 5px !important;
   }
-  li.group .dribbble-over {
-    display: none !important;
-  }
-  li.group .tools {
-    display: none !important;
-  }
-  li.group .attribution {
-    display: none !important;
-  }
 }
 @media screen and (max-width: 3000px) {
   .large-meta {
