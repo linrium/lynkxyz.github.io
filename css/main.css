@@ -149,6 +149,8 @@ button:focus
 
     height: 400px;
 
+    transition: all .3s ease;
+
     background: url('../img/6.jpg');
     background-attachment: fixed;
     background-position: center center;
@@ -205,6 +207,8 @@ button:focus
 .header__album h2
 {
     margin-bottom: 5px;
+
+    transition: all .4s ease-in-out;
 }
 .header__album small
 {
@@ -247,7 +251,7 @@ button:focus
     top: 15px;
 
     width: 500px;
-    margin: 0 50px;
+    margin: 0 120px;
 }
 @media screen and (max-width: 1080px)
 {
@@ -285,8 +289,6 @@ button:focus
 .topmenu__nav
 {
     padding: 0;
-
-    border-bottom: 1px solid rgba(255,255,255,.18);
 }
 .topmenu__nav button
 {
@@ -539,49 +541,98 @@ button:focus
 {
     color: #000;
 }
-.main__watch
-{
-    margin-top: 100px;
-}
-.main__watch-video
-{
-    max-height: 500px;
-}
-.main__watch-video video
-{
-    width: 100%;
-}
-.main__watch-episode
+.main__watch-episode ul
 {
     overflow-y: scroll;
 
-    max-height: 500px;
+    height: 500px;
+    padding-left: 0;
 
-    background: #1d1616;
-}
-.main__watch-episode h,
-.main__watch-episode ul
-{
-    padding-left: 10px;
+    background: #fff;
 }
 .main__watch-episode li
 {
+    box-sizing: content-box;
+    width: 97%;
+    height: 82px;
+    padding: 5px;
+
     list-style: none;
+
+    cursor: pointer;
+    transition: all .3s ease-in-out;
 }
-.main__watch-episode li a
+.main__watch-episode li:hover
+{
+    color: #fff;
+    background: #ed215e;
+}
+.main__watch-episode li:hover a
+{
+    color: #fff;
+}
+.main__watch-episode li img
+{
+    float: left;
+}
+.main__watch-suggest-episode
+{
+    float: left;
+
+    margin-left: 10px;
+}
+.main__watch-suggest-episode a
+{
+    display: block;
+
+    text-decoration: none;
+
+    color: #000;
+}
+.main__watch-info
+{
+    padding: 10px;
+
+    color: #000;
+    background: #fff;
+}
+.main__watch-info h1
+{
+    font-weight: 400;
+}
+.main__watch-info span
 {
     display: block;
 
     padding: 5px 0;
 
+    cursor: pointer;
     transition: all .3s ease-in-out;
-    text-decoration: none;
-
-    color: #fff;
 }
-.main__watch-episode li a:hover
+.main__watch-info span:hover
 {
-    background: #f00;
+    color: #ed215e;
+}
+.main__watch-info #follow
+{
+    font-weight: 500;
+    line-height: 40px;
+
+    height: 48px;
+}
+.main__watch-info #views
+{
+    font-size: 25px;
+
+    padding-right: 30px;
+
+    border-bottom: 1px solid rgba(255,0,0,.11);
+}
+.main__watch-comments
+{
+    margin-top: 20px;
+
+    background: #fff;
 }
 .footer
 {
@@ -631,6 +682,8 @@ button:focus
 }
 .footer__menu-col6
 {
+    overflow: hidden;
+
     height: 420px;
 }
 @media screen and (max-width: 580px)
