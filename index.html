@@ -3,12 +3,17 @@
   <head>
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
-    <link rel="stylesheet" type="text/css" href="js/tooltipster.bundle.min.css"/>
+    <title>Hello world</title>
+    <!-- bootstrap-->
+    <link rel="stylesheet" href="components/bootstrap/dist/css/bootstrap.min.css"/>
+    <!-- font awesome-->
+    <link rel="stylesheet" href="components/components-font-awesome/css/font-awesome.min.css"/>
+    <!-- styles-->
+    <link rel="stylesheet" href="components/hover/css/hover-min.css"/>
+    <!-- styles-->
+    <link rel="stylesheet" href="css/animate.css"/>
+    <!-- styles-->
     <link rel="stylesheet" href="css/main.css"/>
-    <script src="js/jquery-3.0.0.min.js"></script>
-    <script src="js/functions.js"></script>
-    <script src="https://use.fontawesome.com/5917a77811.js"></script>
-    <script type="text/javascript" src="js/tooltipster.bundle.min.js"></script>
     <link rel="apple-touch-icon" sizes="57x57" href="img/fav/apple-touch-icon-57x57.png"/>
     <link rel="apple-touch-icon" sizes="60x60" href="img/fav/apple-touch-icon-60x60.png"/>
     <link rel="apple-touch-icon" sizes="72x72" href="img/fav/apple-touch-icon-72x72.png"/>
@@ -27,420 +32,419 @@
     <meta name="msapplication-TileColor" content="#da532c"/>
     <meta name="msapplication-TileImage" content="img/fav/mstile-144x144.png"/>
     <meta name="theme-color" content="#ffffff"/>
-    <title>Hello world</title>
   </head>
   <body>
-    <header>
-      <div id="header-inner">
-        <div id="toggle-nav"><span></span></div>
-        <div id="nav-wrapper">
-          <div id="logo" class="nav__center"><a href="#"><img src="img/logo.png" alt="logo"/></a></div>
-          <ul id="nav" class="nav__center">
-            <li id="t-search">
-              <form id="search"><i class="fa fa-search"></i>
-                <input type="search" placeholder="Search" class="search-text"/>
-              </form>
-            </li>
-            <li id="t-home"><a href="#">Home</a></li>
-            <li><a href="#">Shots</a>
-              <ul class="tabs">
-                <li><a href="#">Popular</a></li>
-                <li><a href="#">Recent</a></li>
-                <li><a href="#">Teams</a></li>
-                <li><a href="#">Debuts</a></li>
-                <li><a href="#">Playoffs</a></li>
-                <li><a href="#">Animated GIFs</a></li>
-              </ul>
-            </li>
-            <li><a href="#">Designers</a>
-              <ul class="tabs">
-                <li><a href="#">All</a></li>
-                <li><a href="#">For Hire</a></li>
-                <li class="separate"><a href="#">Top Skills & Locations</a></li>
-                <li><a href="#">Skills</a></li>
-                <li><a href="#">Cities</a></li>
-                <li><a href="#">Countries</a></li>
-              </ul>
-            </li>
-            <li><a href="#">Teams</a>
-              <ul class="tabs">
-                <li><a href="#">All</a></li>
-                <li><a href="#">Hiring Designers</a></li>
-                <li><a href="#">Designers Teams for Hire</a></li>
-                <li class="separate"><a href="#">Add Your Designer Team</a></li>
-              </ul>
-            </li>
-            <li><a href="#">Stories</a>
-              <ul class="tabs">
-                <li><a href="#">Lastest Stories</a></li>
-                <li class="separate"><a href="#">Timeout: Nikhil Vootkur</a></li>
-                <li><a href="#">Shot Block: Noodles</a></li>
-                <li><a href="#">Timeout: Dave Chenell</a></li>
-                <li><a href="#">Weekly Replay: Jun 20</a></li>
-                <li><a href="#">Shot Block: ARTCRANK</a></li>
-                <li class="separate"><a href="#">Subscribe</a></li>
-              </ul>
-            </li>
-            <li><a href="#">Meetups</a>
-              <ul class="tabs">
-                <li><a href="#">Meetups</a></li>
-                <li class="separate"><a href="#">Host a Meetup</a></li>
-              </ul>
-            </li>
-            <li id="t-shop"><a href="#">Shop</a>
-              <ul class="tabs">
-                <li><a href="#">Goods by Designers</a></li>
-                <li><a href="#">Deals for Designers</a></li>
-                <li class="separate"><a href="#">Deals for Designers</a></li>
-              </ul>
-            </li>
-            <li class="more"><a href="http://google.com" class="more-item">Jobs</a>
-              <ul class="tabs">
-                <li><a href="#">All</a></li>
-                <li><a href="#">Remote / Anywhere</a></li>
-                <li><a href="#">@ Teams </a></li>
-                <li class="separate"><a href="#">Post a Job</a></li>
-              </ul>
-            </li>
-            <li id="t-more" class="more"><a href="http://google.com" class="bull">&bull; &bull; &bull;</a><a href="#" class="more-item">More</a>
-              <ul class="tabs">
-                <li><a href="#">Highlights</a></li>
-                <li><a href="#">Projects</a></li>
-                <li><a href="#">Buckets</a></li>
-                <li><a href="#">Colors</a></li>
-                <li><a href="#">Tags</a></li>
-                <li class="separate"><a href="#">About</a></li>
-                <li><a href="#">Blog</a></li>
-                <li><a href="#">Podcast</a></li>
-                <li class="separate"><a href="#">Twitter</a></li>
-                <li><a href="#">Facebook</a></li>
-                <li><a href="#">Integrations</a></li>
-                <li class="separate"><a href="#">Support</a></li>
-              </ul>
-            </li>
-            <li id="t-w"></li>
-            <li id="t-profile" class="more"><a href="#" class="avatar"><img src="img/avatar.jpg" alt="avatar"/><span class="name">lynkxyz</span></a>
-              <ul class="tabs">
-                <li><a href="#">lynkxyz</a></li>
-                <li class="gopro separate"><a href="#">Go Pro</a></li>
-                <li class="separate"><a href="#">Account Settings</a></li>
-                <li><a href="#">Sign Out</a></li>
-              </ul>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </header>
-    <div class="wrap">
-      <div class="fulltabs">
-        <ul class="shot-menu">
-          <li class="shot-more"><a href="">Popular</a>
-            <ul class="sub">
-              <li><a href="">Recent</a></li>
-              <li><a href="">Most Viewed</a></li>
-              <li><a href="">Most Commented</a></li>
-            </ul>
-          </li>
-          <li class="shot-more"><a href="">Shots</a>
-            <ul class="sub">
-              <li><a href="">Debuts</a></li>
-              <li><a href="">Team Shots</a></li>
-              <li><a href="">Playoffs</a></li>
-              <li><a href="">Rebounds</a></li>
-              <li><a href="">Animated GIFs</a></li>
-              <li><a href="">Shots with Attachments</a></li>
-            </ul>
-          </li>
-          <li class="shot-more"><a href="">Now</a>
-            <ul class="sub">
-              <li><a href="">This Past Week</a></li>
-              <li><a href="">This Past Month</a></li>
-              <li><a href="">This Past Year</a></li>
-              <li><a href="">All Time</a></li>
-            </ul>
-          </li>
-        </ul>
-        <div class="screenshot-actions"><span class="action-grid"></span>
-          <ul class="actions-list">
-            <li class="shot-display">
-              <h3>Display Options</h3>
-              <ul class="large-small">
-                <li title="Small with info" rel="tipsy" data-tipsy-class="tipsy-alt" original-title="" class="small-with-meta active"><a href="#">
-                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveaspectratio="xMidYMid" width="42" height="42" viewbox="0 0 72 72">
-                      <path d="M48.992,53.0045 L23.009,53.0045 C21.358,53.0045 20.01,51.6595 20.01,50.0035 L20.01,21.9965 C20.01,20.3375 21.358,18.9955 23.009,18.9955 L48.992,18.9955 C50.649,18.9955 51.99,20.3375 51.99,21.9965 L51.99,50.0035 C51.99,51.6595 50.649,53.0045 48.992,53.0045 L48.992,53.0045 L48.992,53.0045 Z M27.989,47.9995 L43.989,47.9995 C45.094,47.9995 45.989,47.1045 45.989,45.9995 C45.989,44.8945 45.094,43.9995 43.989,43.9995 L27.989,43.9995 C26.884,43.9995 25.989,44.8945 25.989,45.9995 C25.989,47.1045 26.884,47.9995 27.989,47.9995 L27.989,47.9995 L27.989,47.9995 Z M45.993,24.9965 L26.008,24.9965 L26.008,39.0025 L45.993,39.0025 L45.993,24.9965 L45.993,24.9965 Z" fill="#333333"></path>
-                    </svg></a></li>
-                <li title="Large with info" rel="tipsy" data-tipsy-class="tipsy-alt" original-title="" class="large-with-meta"><a href="#">
-                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveaspectratio="xMidYMid" width="42" height="42" viewbox="0 0 72 72">
-                      <path d="M56.992,61.0045 L15.009,61.0045 C13.358,61.0045 12.01,59.6595 12.01,58.0035 L12.01,13.9965 C12.01,12.3375 13.358,10.9955 15.009,10.9955 L56.992,10.9955 C58.649,10.9955 59.99,12.3375 59.99,13.9965 L59.99,58.0035 C59.99,59.6595 58.649,61.0045 56.992,61.0045 L56.992,61.0045 Z M19.989,55.9995 L51.989,55.9995 C53.094,55.9995 53.989,55.1045 53.989,53.9995 C53.989,52.8945 53.094,51.9995 51.989,51.9995 L19.989,51.9995 C18.884,51.9995 17.989,52.8945 17.989,53.9995 C17.989,55.1045 18.884,55.9995 19.989,55.9995 L19.989,55.9995 Z M53.993,16.9965 L18.008,16.9965 L18.008,47.0025 L53.993,47.0025 L53.993,16.9965 L53.993,16.9965 Z" fill="#333333"></path>
-                    </svg></a></li>
-                <li title="Small without info" rel="tipsy" data-tipsy-class="tipsy-alt" original-title="" class="small-without-meta"><a href="#">
-                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveaspectratio="xMidYMid" width="42" height="42" viewbox="0 0 72 72">
-                      <path d="M48.992,49.0045 L23.009,49.0045 C21.358,49.0045 20.01,47.6595 20.01,46.0035 L20.01,25.9965 C20.01,24.3375 21.358,22.9955 23.009,22.9955 L48.992,22.9955 C50.649,22.9955 51.99,24.3375 51.99,25.9965 L51.99,46.0035 C51.99,47.6595 50.649,49.0045 48.992,49.0045 L48.992,49.0045 Z M45.993,28.9965 L26.008,28.9965 L26.008,43.0025 L45.993,43.0025 L45.993,28.9965 L45.993,28.9965 Z" fill="#333333"></path>
-                    </svg></a></li>
-                <li title="Large without info" rel="tipsy" data-tipsy-class="tipsy-alt" original-title="" class="large-without-meta"><a href="#">
-                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveaspectratio="xMidYMid" width="42" height="42" viewbox="0 0 72 72">
-                      <path d="M56.992,57.0045 L15.009,57.0045 C13.358,57.0045 12.01,55.6595 12.01,54.0035 L12.01,17.9965 C12.01,16.3375 13.358,14.9955 15.009,14.9955 L56.992,14.9955 C58.649,14.9955 59.99,16.3375 59.99,17.9965 L59.99,54.0035 C59.99,55.6595 58.649,57.0045 56.992,57.0045 L56.992,57.0045 Z M53.993,20.9965 L18.008,20.9965 L18.008,51.0025 L53.993,51.0025 L53.993,20.9965 L53.993,20.9965 Z" fill="#333333"></path>
-                    </svg></a></li>
-              </ul>
-            </li>
-          </ul>
-        </div>
-      </div>
-      <div id="wap-inner">
-        <div id="content">
-          <div id="main" class="main-full">
-            <ul class="dribbbles">
-                  <li class="group">
-                    <div class="dribbble">
-                      <div class="dribbble-shot">
-                        <div class="dribbble-img"><a href="" class="dribbble-link"><img src="./img/post/1.jpg" alt=""/></a><a href="" class="dribbble-over"><strong>Hard days night</strong><em class="time">about 13 hours ago</em></a></div>
-                        <ul class="tools">
-                          <li class="views"><i class="fa fa-eye"></i><span>2,498</span></li>
-                          <li class="cmt"><i class="fa fa-comment"></i><span>11</span></li>
-                          <li class="fav"><a href="" class="toggle-fav"><i class="fa fa-heart"></i></a><a href="" title="View fans of this shot">340</a></li>
-                        </ul>
-                      </div>
-                    </div>
-                    <h2 class="attribution"><a href="#">R A D I O P<img src="./img/avatar/1.jpg" alt="" class="attribution__avatar"/></a><a href="#" class="badge-link"><span class="badge badge-pro">Pro</span></a></h2>
-                  </li>
-                  <li class="group">
-                    <div class="dribbble">
-                      <div class="dribbble-shot">
-                        <div class="dribbble-img"><a href="" class="dribbble-link"><img src="./img/post/2.png" alt=""/></a><a href="" class="dribbble-over"><strong>Fursan Travel</strong><span class="comment"> New refreshing look approved by client for my friends @Balkan Brothers First really challenging project that ended up better than we expected :)</span><em class="time">about 13 hours ago</em></a></div>
-                        <ul class="tools">
-                          <li class="views"><i class="fa fa-eye"></i><span>3,886</span></li>
-                          <li class="cmt"><i class="fa fa-comment"></i><span>9</span></li>
-                          <li class="fav"><a href="" class="toggle-fav"><i class="fa fa-heart"></i></a><a href="" title="View fans of this shot">260</a></li>
-                        </ul>
-                      </div>
-                    </div>
-                    <h2 class="attribution"><a href="#">Charlie Isslander<img src="./img/avatar/2.png" alt="" class="attribution__avatar"/></a><a href="#" class="badge-link"><span class="badge badge-pro">Team</span></a></h2>
-                  </li>
-                  <li class="group">
-                    <div class="dribbble">
-                      <div class="dribbble-shot">
-                        <div class="dribbble-img"><a href="" class="dribbble-link"><img src="./img/post/3.jpg" alt=""/></a><a href="" class="dribbble-over"><strong>Haters Gonna Hate</strong><span class="comment"> Have a nice week! ;)</span><em class="time">about 13 hours ago</em></a></div>
-                        <ul class="tools">
-                          <li class="views"><i class="fa fa-eye"></i><span>2,498</span></li>
-                          <li class="cmt"><i class="fa fa-comment"></i><span>11</span></li>
-                          <li class="fav"><a href="" class="toggle-fav"><i class="fa fa-heart"></i></a><a href="" title="View fans of this shot">340</a></li>
-                        </ul>
-                      </div>
-                    </div>
-                    <h2 class="attribution"><a href="#">Dmitry Stolz<img src="./img/avatar/3.png" alt="" class="attribution__avatar"/></a><a href="#" class="badge-link"><span class="badge badge-pro">Pro</span></a></h2>
-                  </li>
-                  <li class="group">
-                    <div class="dribbble">
-                      <div class="dribbble-shot">
-                        <div class="dribbble-img"><a href="" class="dribbble-link"><img src="./img/post/4.jpg" alt=""/></a><a href="" class="dribbble-over"><strong>Growlithe</strong><span class="comment"> This loyal fire Pokémon comes bounding into our 20 year anniversary collection!</span><em class="time">about 13 hours ago</em></a></div>
-                        <ul class="tools">
-                          <li class="views"><i class="fa fa-eye"></i><span>2,498</span></li>
-                          <li class="cmt"><i class="fa fa-comment"></i><span>11</span></li>
-                          <li class="fav"><a href="" class="toggle-fav"><i class="fa fa-heart"></i></a><a href="" title="View fans of this shot">340</a></li>
-                        </ul>
-                      </div>
-                    </div>
-                    <h2 class="attribution"><a href="#">MUTI<img src="./img/avatar/4.jpg" alt="" class="attribution__avatar"/></a><a href="#" class="badge-link"><span class="badge badge-pro">Pro</span></a></h2>
-                  </li>
-                  <li class="group">
-                    <div class="dribbble">
-                      <div class="dribbble-shot">
-                        <div class="dribbble-img"><a href="" class="dribbble-link"><img src="./img/post/5.png" alt=""/></a><a href="" class="dribbble-over"><strong>VROOM</strong><span class="comment"> Custom type redesign for VROOM, which is a platform who buy and sell cars based in New York and operating in the US. We went for a simple yet effective type work since the name pretty much suggest where it is all about.</span><em class="time">about 13 hours ago</em></a></div>
-                        <ul class="tools">
-                          <li class="views"><i class="fa fa-eye"></i><span>2,498</span></li>
-                          <li class="cmt"><i class="fa fa-comment"></i><span>11</span></li>
-                          <li class="fav"><a href="" class="toggle-fav"><i class="fa fa-heart"></i></a><a href="" title="View fans of this shot">340</a></li>
-                        </ul>
-                      </div>
-                    </div>
-                    <h2 class="attribution"><a href="#">Paul von Excite<img src="./img/avatar/5.jpg" alt="" class="attribution__avatar"/></a><a href="#" class="badge-link"><span class="badge badge-pro">Pro</span></a></h2>
-                  </li>
-                  <li class="group">
-                    <div class="dribbble">
-                      <div class="dribbble-shot">
-                        <div class="dribbble-img"><a href="" class="dribbble-link"><img src="./img/post/6.gif" alt=""/></a><a href="" class="dribbble-over"><strong>Submarine</strong><span class="comment"> This little guy is exploring the ocean. Perhaps, he will find some treasures soon!</span><em class="time">about 13 hours ago</em></a></div>
-                        <ul class="tools">
-                          <li class="views"><i class="fa fa-eye"></i><span>2,498</span></li>
-                          <li class="cmt"><i class="fa fa-comment"></i><span>11</span></li>
-                          <li class="fav"><a href="" class="toggle-fav"><i class="fa fa-heart"></i></a><a href="" title="View fans of this shot">340</a></li>
-                        </ul>
-                      </div>
-                    </div>
-                    <h2 class="attribution"><a href="#">Dmitrij<img src="./img/avatar/6.jpg" alt="" class="attribution__avatar"/></a><a href="#" class="badge-link"><span class="badge badge-pro">Pro</span></a></h2>
-                  </li>
-                  <li class="group">
-                    <div class="dribbble">
-                      <div class="dribbble-shot">
-                        <div class="dribbble-img"><a href="" class="dribbble-link"><img src="./img/post/7.png" alt=""/></a><a href="" class="dribbble-over"><strong>F***K U Dance</strong><span class="comment"> This is what happen when you have 2 hours off and nothing better to do.</span><em class="time">about 13 hours ago</em></a></div>
-                        <ul class="tools">
-                          <li class="views"><i class="fa fa-eye"></i><span>2,498</span></li>
-                          <li class="cmt"><i class="fa fa-comment"></i><span>11</span></li>
-                          <li class="fav"><a href="" class="toggle-fav"><i class="fa fa-heart"></i></a><a href="" title="View fans of this shot">340</a></li>
-                        </ul>
-                      </div>
-                    </div>
-                    <h2 class="attribution"><a href="#">Emanuele Colombo<img src="./img/avatar/7.png" alt="" class="attribution__avatar"/></a><a href="#" class="badge-link"><span class="badge badge-pro">Pro</span></a></h2>
-                  </li>
-                  <li class="group">
-                    <div class="dribbble">
-                      <div class="dribbble-shot">
-                        <div class="dribbble-img"><a href="" class="dribbble-link"><img src="./img/post/8.gif" alt=""/></a><a href="" class="dribbble-over"><strong>I Design With Code</strong><span class="comment"> An SVG animation for my site. Inspired by the wonderfully playful Creogram Check out the live SVG on CodePen here</span><em class="time">July 05, 2016</em></a></div>
-                        <ul class="tools">
-                          <li class="views"><i class="fa fa-eye"></i><span>2,498</span></li>
-                          <li class="cmt"><i class="fa fa-comment"></i><span>11</span></li>
-                          <li class="fav"><a href="" class="toggle-fav"><i class="fa fa-heart"></i></a><a href="" title="View fans of this shot">340</a></li>
-                        </ul>
-                      </div>
-                    </div>
-                    <h2 class="attribution"><a href="#">Chris Gannon<img src="./img/avatar/8.jpg" alt="" class="attribution__avatar"/></a><a href="#" class="badge-link"><span class="badge badge-pro">Pro</span></a></h2>
-                  </li>
-                  <li class="group">
-                    <div class="dribbble">
-                      <div class="dribbble-shot">
-                        <div class="dribbble-img"><a href="" class="dribbble-link"><img src="./img/post/9.gif" alt=""/></a><a href="" class="dribbble-over"><strong>Playe Animation</strong><span class="comment"> Hey, here's the animation. Can't upload 800x600 px guys, cause of maximum size limitation. Hope you like it :)</span><em class="time">July 05, 2016</em></a></div>
-                        <ul class="tools">
-                          <li class="views"><i class="fa fa-eye"></i><span>2,498</span></li>
-                          <li class="cmt"><i class="fa fa-comment"></i><span>11</span></li>
-                          <li class="fav"><a href="" class="toggle-fav"><i class="fa fa-heart"></i></a><a href="" title="View fans of this shot">340</a></li>
-                        </ul>
-                      </div>
-                    </div>
-                    <h2 class="attribution"><a href="#">Tintins<img src="./img/avatar/9.jpg" alt="" class="attribution__avatar"/></a><a href="#" class="badge-link"><span class="badge badge-pro">Pro</span></a></h2>
-                  </li>
-                  <li class="group">
-                    <div class="dribbble">
-                      <div class="dribbble-shot">
-                        <div class="dribbble-img"><a href="" class="dribbble-link"><img src="./img/post/10.png" alt=""/></a><a href="" class="dribbble-over"><strong>Basilica-of-Notre-Dame-de-Fourvière富维耶圣母院</strong><span class="comment"> Basilica-of-Notre-Dame-de-Fourvière富维耶圣母院 The personal exhibition-《AWE-Architecture is Awesome x100》/《AWE-建筑很有型x100》.The landmark building and fantastic architecture come from all over the world.</span><em class="time">July 05, 2016</em></a></div>
-                        <ul class="tools">
-                          <li class="extra share"><a href="" title="This shot is a rebound (reply) of another shot. View the original."><img src="./img/rebound.png" alt=""/></a></li>
-                          <li class="extra attach"><a title="This shot has attachments"><img src="./img/attach.png" alt=""/></a></li>
-                          <li class="views"><i class="fa fa-eye"></i><span>2,498</span></li>
-                          <li class="cmt"><i class="fa fa-comment"></i><span>11</span></li>
-                          <li class="fav"><a href="" class="toggle-fav"><i class="fa fa-heart"></i></a><a href="" title="View fans of this shot">340</a></li>
-                        </ul>
-                      </div>
-                    </div>
-                    <h2 class="attribution"><a href="#">Michael Wong<img src="./img/avatar/10.png" alt="" class="attribution__avatar"/></a><a href="#" class="badge-link"><span class="badge badge-pro">Pro</span></a></h2>
-                  </li>
-                  <li class="group">
-                    <div class="dribbble">
-                      <div class="dribbble-shot">
-                        <div class="dribbble-img"><a href="" class="dribbble-link"><img src="./img/post/11.gif" alt=""/></a><a href="" class="dribbble-over"><strong>BMO</strong><em class="time">July 05, 2016</em></a></div>
-                        <ul class="tools">
-                          <li class="views"><i class="fa fa-eye"></i><span>2,498</span></li>
-                          <li class="cmt"><i class="fa fa-comment"></i><span>11</span></li>
-                          <li class="fav"><a href="" class="toggle-fav"><i class="fa fa-heart"></i></a><a href="" title="View fans of this shot">340</a></li>
-                        </ul>
-                      </div>
-                    </div>
-                    <h2 class="attribution"><a href="#">Michael Wong<img src="./img/avatar/11.png" alt="" class="attribution__avatar"/></a><a href="#" class="badge-link"><span class="badge badge-pro">Pro</span></a></h2>
-                  </li>
-                  <li class="group">
-                    <div class="dribbble">
-                      <div class="dribbble-shot">
-                        <div class="dribbble-img"><a href="" class="dribbble-link"><img src="./img/post/12.png" alt=""/></a><a href="" class="dribbble-over"><strong>Hail Hydra!</strong><span class="comment"> On this special day, here's my newest print available for Pre-Order on this day ONLY. The remains will be available on July 14th.</span><em class="time">July 05, 2016</em></a></div>
-                        <ul class="tools">
-                          <li class="extra attach"><a title="This shot has attachments"><img src="./img/attach.png" alt=""/></a></li>
-                          <li class="views"><i class="fa fa-eye"></i><span>2,498</span></li>
-                          <li class="cmt"><i class="fa fa-comment"></i><span>11</span></li>
-                          <li class="fav"><a href="" class="toggle-fav"><i class="fa fa-heart"></i></a><a href="" title="View fans of this shot">340</a></li>
-                        </ul>
-                      </div>
-                    </div>
-                    <h2 class="attribution"><a href="#">Marie Bergeron<img src="./img/avatar/12.gif" alt="" class="attribution__avatar"/></a><a href="#" class="badge-link"><span class="badge badge-pro">Pro</span></a></h2>
-                  </li>
-                  <li class="group">
-                    <div class="dribbble">
-                      <div class="dribbble-shot">
-                        <div class="dribbble-img"><a href="" class="dribbble-link"><img src="./img/post/13.png" alt=""/></a><a href="" class="dribbble-over"><strong>BitGold Business Marketing Page</strong><span class="comment"> Snapshot of the BitGold Business Landing page that we made really quickly to showcase our invoice and checkout tools. Came out pretty good. It’s got a unique feel to it. Elements of this design have been incorporated into the ever evolving Goldmoney Brand which you will see more of soon.</span><em class="time">July 05, 2016</em></a></div>
-                        <ul class="tools">
-                          <li class="extra attach"><a title="This shot has attachments"><img src="./img/attach.png" alt=""/></a></li>
-                          <li class="views"><i class="fa fa-eye"></i><span>2,498</span></li>
-                          <li class="cmt"><i class="fa fa-comment"></i><span>11</span></li>
-                          <li class="fav"><a href="" class="toggle-fav"><i class="fa fa-heart"></i></a><a href="" title="View fans of this shot">340</a></li>
-                        </ul>
-                      </div>
-                    </div>
-                    <h2 class="attribution"><a href="#">Mike Busby<img src="./img/avatar/13.png" alt="" class="attribution__avatar"/></a><a href="#" class="badge-link"><span class="badge badge-pro">Pro</span></a></h2>
-                  </li>
-                  <li class="group">
-                    <div class="dribbble">
-                      <div class="dribbble-shot">
-                        <div class="dribbble-img"><a href="" class="dribbble-link"><img src="./img/post/14.png" alt=""/></a><a href="" class="dribbble-over"><strong>Cheesy</strong><span class="comment"> Show some love press &quot;L&quot;</span><em class="time">July 05, 2016</em></a></div>
-                        <ul class="tools">
-                          <li class="views"><i class="fa fa-eye"></i><span>2,498</span></li>
-                          <li class="cmt"><i class="fa fa-comment"></i><span>11</span></li>
-                          <li class="fav"><a href="" class="toggle-fav"><i class="fa fa-heart"></i></a><a href="" title="View fans of this shot">340</a></li>
-                        </ul>
-                      </div>
-                    </div>
-                    <h2 class="attribution"><a href="#">MBE<img src="./img/avatar/14.png" alt="" class="attribution__avatar"/></a><a href="#" class="badge-link"><span class="badge badge-pro">Pro</span></a></h2>
-                  </li>
-                  <li class="group">
-                    <div class="dribbble">
-                      <div class="dribbble-shot">
-                        <div class="dribbble-img"><a href="" class="dribbble-link"><img src="./img/post/15.jpg" alt=""/></a><a href="" class="dribbble-over"><strong>Forefathers 5 Year Anniversary</strong><span class="comment"> Wow. 5 years. Holy shit. To say we are honored and humbled to be going strong with Forefathers for half a decade now would just be an understatement.</span><em class="time">July 05, 2016</em></a></div>
-                        <ul class="tools">
-                          <li class="views"><i class="fa fa-eye"></i><span>2,498</span></li>
-                          <li class="cmt"><i class="fa fa-comment"></i><span>11</span></li>
-                          <li class="fav"><a href="" class="toggle-fav"><i class="fa fa-heart"></i></a><a href="" title="View fans of this shot">340</a></li>
-                        </ul>
-                      </div>
-                    </div>
-                    <h2 class="attribution"><a href="#">Forefathers™<img src="./img/avatar/15.jpg" alt="" class="attribution__avatar"/></a><a href="#" class="badge-link"><span class="badge badge-pro">Pro</span></a></h2>
-                  </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </div>
-    <footer>
-      <div id="footer-inner">
-        <div class="group">
-          <div class="footer-mod">
-            <div class="footer-logo"><a href=""><img src="./img/logo-hover.png" alt=""/></a></div>
-            <p class="logan">Show and tell for designers</p>
-            <p class="about">What are you working on? Dribbble is a community of designers sharing screenshots of their work, process, and projects.    </p>
-          </div>
-          <div class="footer-mod">
-            <ul class="extra-links">
-              <li><a href="">About</a></li>
-              <li><a href="">Help</a></li>
-              <li><a href="">Contact</a></li>
-              <li><a href="">Terms</a></li>
-              <li><a href="">Privacy</a></li>
-              <li><a href="">Shop</a></li>
-              <li><a href="">Testimonials</a></li>
-              <li><a href="">Handbook</a></li>
-              <li><a href="">Brand</a></li>
-              <li><a href="">Advertise</a></li>
-              <li><a href="">API</a></li>
-              <li><a href="">Integrations</a></li>
-            </ul>
-          </div>
-          <div class="footer-mod">
-            <h3><a href="">Jobs for Designers</a></h3>
-            <ul class="jobs-list">
-              <li class="group"><a href="" title="Visit the team's profile"><img src="./img/base.png" alt=""/></a><a href="">
-                  <p>Base</p><span>Senior Product Designers</span></a></li>
-              <li class="group"><a href="" title="Visit the team's profile"><img src="./img/fantasy.png" alt=""/></a><a href="">
-                  <p>Off the Grid</p><span>Graphic Designers</span></a></li>
-            </ul>
-          </div>
-          <div class="footer-mod last">
-            <div class="group thedeck"><a href=""><img src="./img/mapbox.jpg" alt=""/></a>
-              <div class="deck-content"><a href="">ADS VIA THE DECK</a>
-                <p>Create beautiful maps with <a href="">Mapbox.</a></p>
+    <div id="webmovie" class="container-fluid">
+      <header class="row header">
+        <div class="col-md-12">
+          <div class="wrapper">
+            <div class="header__search row">
+              <div class="col-md-4 header__search--center">
+                <input type="search" placeholder="What are you looking for ?" id="search-bar" class="form-control"/>
+              </div>
+            </div>
+            <div class="header__album">
+              <h2>Dragon Ball Super</h2><small>new episode</small>
+              <div class="header__album--btn">
+                <button class="btn btn-outline-primary btn-active">play</button>
+                <button class="btn btn-outline-primary">follow</button>
               </div>
             </div>
           </div>
         </div>
-        <h4 id="pixels"><strong>543,384,132,196</strong>
-          <p>pixels dribbbled</p>
-        </h4>
-        <p class="copyright">Copyright © 2009–2016 Dribbble LLC. All screenshots © their respective owners. Shipped from Salem, Mass. USA.</p>
-        <p class="follow"><a href=""><i class="fa fa-dribbble"></i></a><a href=""><i class="fa fa-twitter"></i></a><a href=""><i class="fa fa-facebook-official"></i></a><a href=""><i class="fa fa-instagram"></i></a><a href=""><i class="fa fa-globe"></i></a></p>
+      </header>
+      <div id="navmenu" class="row topmenu">
+        <div class="col-md-12">
+          <div class="wrapper">
+            <nav class="navbar topmenu__nav">
+              <button type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler hidden-lg-up"><i class="fa fa-bars"></i></button>
+              <div id="navbarResponsive" class="collapse navbar-toggleable-md">
+                <ul class="nav navbar-nav">
+                  <li class="nav-item active hvr-underline-from-left"><a href="#" class="nav-link">Home <span class="sr-only">(current)</span></a></li>
+                  <li class="nav-item hvr-underline-from-left"><a href="#" class="nav-link">Genre</a></li>
+                  <li class="nav-item hvr-underline-from-left"><a href="#" class="nav-link">Year</a></li>
+                  <li class="nav-item hvr-underline-from-left"><a href="#" class="nav-link">Season</a></li>
+                </ul>
+              </div>
+            </nav>
+          </div>
+        </div>
       </div>
-    </footer>
+      <div class="main row">
+        <div class="col-md-12">
+          <div class="wrapper">
+            <div class="main__citem">
+              <div class="row main__header">
+                      <div class="col-md-9 col-sm-7 col-xs-5">
+                        <h3>New Anime Releases For You</h3>
+                      </div>
+                      <div class="col-md-3 col-sm-5 col-xs-7 main__header--right"><a href="#">show all</a><a href="#"><i class="fa fa-chevron-left"></i></a><a href="#"><i class="fa fa-chevron-right"></i></a></div>
+              </div>
+              <div class="row main__citem-content">
+                      <div class="col-lg-2 col-md-3 col-sm-4 col-xs-6">
+                        <div class="main__citem-item">
+                          <div class="overlay"><img src="img/play.png"/></div><img src="img/1.jpg" alt="" class="img-responsive"/>
+                          <div class="main__citem-des">
+                            <h2>One Piece</h2><span>#700</span>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-lg-2 col-md-3 col-sm-4 col-xs-6">
+                        <div class="main__citem-item">
+                          <div class="overlay"><img src="img/play.png"/></div><img src="img/2.jpg" alt="" class="img-responsive"/>
+                          <div class="main__citem-des">
+                            <h2>Naruto</h2><span>#530</span>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-lg-2 col-md-3 col-sm-4 col-xs-6">
+                        <div class="main__citem-item">
+                          <div class="overlay"><img src="img/play.png"/></div><img src="img/3.jpg" alt="" class="img-responsive"/>
+                          <div class="main__citem-des">
+                            <h2>Fairy Tail</h2><span>#30</span>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-lg-2 col-md-3 col-sm-4 col-xs-6">
+                        <div class="main__citem-item">
+                          <div class="overlay"><img src="img/play.png"/></div><img src="img/4.jpg" alt="" class="img-responsive"/>
+                          <div class="main__citem-des">
+                            <h2>Bleach</h2><span>#530</span>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-lg-2 col-md-3 col-sm-4 col-xs-6">
+                        <div class="main__citem-item">
+                          <div class="overlay"><img src="img/play.png"/></div><img src="img/5.jpg" alt="" class="img-responsive"/>
+                          <div class="main__citem-des">
+                            <h2>One Puch Man</h2><span>#35</span>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-lg-2 col-md-3 col-sm-4 col-xs-6">
+                        <div class="main__citem-item">
+                          <div class="overlay"><img src="img/play.png"/></div><img src="img/6.jpg" alt="" class="img-responsive"/>
+                          <div class="main__citem-des">
+                            <h2>Dragon Ball Super</h2><span>Movie</span>
+                          </div>
+                        </div>
+                      </div>
+              </div>
+            </div>
+            <div class="main__citem">
+              <div class="row main__header">
+                      <div class="col-md-9 col-sm-7 col-xs-5">
+                        <h3>You May Be Like This</h3>
+                      </div>
+                      <div class="col-md-3 col-sm-5 col-xs-7 main__header--right"><a href="#">show all</a><a href="#"><i class="fa fa-chevron-left"></i></a><a href="#"><i class="fa fa-chevron-right"></i></a></div>
+              </div>
+              <div class="row main__citem-content">
+                      <div class="col-lg-2 col-md-3 col-sm-4 col-xs-6">
+                        <div class="main__citem-item">
+                          <div class="overlay"><img src="img/play.png"/></div><img src="img/7.jpg" alt="" class="img-responsive"/>
+                          <div class="main__citem-des">
+                            <h2>Pokemon</h2><span>#320</span>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-lg-2 col-md-3 col-sm-4 col-xs-6">
+                        <div class="main__citem-item">
+                          <div class="overlay"><img src="img/play.png"/></div><img src="img/8.jpg" alt="" class="img-responsive"/>
+                          <div class="main__citem-des">
+                            <h2>Black Rock Shooter</h2><span>#125</span>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-lg-2 col-md-3 col-sm-4 col-xs-6">
+                        <div class="main__citem-item">
+                          <div class="overlay"><img src="img/play.png"/></div><img src="img/9.jpg" alt="" class="img-responsive"/>
+                          <div class="main__citem-des">
+                            <h2>Sword Art Online</h2><span>#56</span>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-lg-2 col-md-3 col-sm-4 col-xs-6">
+                        <div class="main__citem-item">
+                          <div class="overlay"><img src="img/play.png"/></div><img src="img/10.jpg" alt="" class="img-responsive"/>
+                          <div class="main__citem-des">
+                            <h2>5cm/s</h2><span>#75</span>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-lg-2 col-md-3 col-sm-4 col-xs-6">
+                        <div class="main__citem-item">
+                          <div class="overlay"><img src="img/play.png"/></div><img src="img/11.jpg" alt="" class="img-responsive"/>
+                          <div class="main__citem-des">
+                            <h2>Date A Live</h2><span>#532</span>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-lg-2 col-md-3 col-sm-4 col-xs-6">
+                        <div class="main__citem-item">
+                          <div class="overlay"><img src="img/play.png"/></div><img src="img/12.jpg" alt="" class="img-responsive"/>
+                          <div class="main__citem-des">
+                            <h2>Attack on the Titan</h2><span>#325</span>
+                          </div>
+                        </div>
+                      </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="main__ritem col-sm-12 col-md-6">
+                <div class="row main__header">
+                  <div class="col-md-10 col-sm-7 col-xs-5">
+                    <h3>Top View</h3>
+                  </div>
+                </div>
+                <div class="row main__ritem-content">
+                        <div class="col-md-12 col-sm-12 col-xs-12 hvr-wobble-skew">
+                          <div class="row main__ritem-item">
+                            <div class="col-md-1 col-sm-1 col-xs-1 main__ritem-numberic"><span>01</span></div>
+                            <div class="col-md-2 col-sm-2 col-xs-2 main__ritem-thumb"><img src="img/19.jpg" alt=""/></div>
+                            <div class="col-md-5 col-sm-7 col-xs-5 main__ritem-title">
+                              <h2>Stand By Me</h2><span>Movie</span>
+                            </div>
+                            <div class="col-md-4 col-sm-2 main__ritem-icon">
+                              <button class="btn btn-nooutline-primary">PLAY</button>
+                              <button class="btn btn-nooutline-primary">LIKE</button>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-md-12 col-sm-12 col-xs-12 hvr-wobble-skew">
+                          <div class="row main__ritem-item">
+                            <div class="col-md-1 col-sm-1 col-xs-1 main__ritem-numberic"><span>02</span></div>
+                            <div class="col-md-2 col-sm-2 col-xs-2 main__ritem-thumb"><img src="img/20.jpg" alt=""/></div>
+                            <div class="col-md-5 col-sm-7 col-xs-5 main__ritem-title">
+                              <h2>Adventure Time</h2><span>#250</span>
+                            </div>
+                            <div class="col-md-4 col-sm-2 main__ritem-icon">
+                              <button class="btn btn-nooutline-primary">PLAY</button>
+                              <button class="btn btn-nooutline-primary">LIKE</button>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-md-12 col-sm-12 col-xs-12 hvr-wobble-skew">
+                          <div class="row main__ritem-item">
+                            <div class="col-md-1 col-sm-1 col-xs-1 main__ritem-numberic"><span>03</span></div>
+                            <div class="col-md-2 col-sm-2 col-xs-2 main__ritem-thumb"><img src="img/21.jpg" alt=""/></div>
+                            <div class="col-md-5 col-sm-7 col-xs-5 main__ritem-title">
+                              <h2>Inu Yasha</h2><span>#250</span>
+                            </div>
+                            <div class="col-md-4 col-sm-2 main__ritem-icon">
+                              <button class="btn btn-nooutline-primary">PLAY</button>
+                              <button class="btn btn-nooutline-primary">LIKE</button>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-md-12 col-sm-12 col-xs-12 hvr-wobble-skew">
+                          <div class="row main__ritem-item">
+                            <div class="col-md-1 col-sm-1 col-xs-1 main__ritem-numberic"><span>04</span></div>
+                            <div class="col-md-2 col-sm-2 col-xs-2 main__ritem-thumb"><img src="img/22.jpg" alt=""/></div>
+                            <div class="col-md-5 col-sm-7 col-xs-5 main__ritem-title">
+                              <h2>Masou Gakuen HxH</h2><span>#250</span>
+                            </div>
+                            <div class="col-md-4 col-sm-2 main__ritem-icon">
+                              <button class="btn btn-nooutline-primary">PLAY</button>
+                              <button class="btn btn-nooutline-primary">LIKE</button>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-md-12 col-sm-12 col-xs-12 hvr-wobble-skew">
+                          <div class="row main__ritem-item">
+                            <div class="col-md-1 col-sm-1 col-xs-1 main__ritem-numberic"><span>05</span></div>
+                            <div class="col-md-2 col-sm-2 col-xs-2 main__ritem-thumb"><img src="img/23.jpg" alt=""/></div>
+                            <div class="col-md-5 col-sm-7 col-xs-5 main__ritem-title">
+                              <h2>Overlord</h2><span>#250</span>
+                            </div>
+                            <div class="col-md-4 col-sm-2 main__ritem-icon">
+                              <button class="btn btn-nooutline-primary">PLAY</button>
+                              <button class="btn btn-nooutline-primary">LIKE</button>
+                            </div>
+                          </div>
+                        </div>
+                  <div class="main__ritem-showall col-md-12"><span>show all </span><i class="fa fa-chevron-down"></i></div>
+                </div>
+              </div>
+              <div class="main__ritem col-sm-12 col-md-6">
+                <div class="row main__header">
+                  <div class="col-md-10 col-sm-7 col-xs-5">
+                    <h3>Top Like</h3>
+                  </div>
+                </div>
+                <div class="row main__ritem-content">
+                        <div class="col-md-12 col-sm-12 col-xs-12 hvr-wobble-skew">
+                          <div class="row main__ritem-item">
+                            <div class="col-md-1 col-sm-1 col-xs-1 main__ritem-numberic"><span>01</span></div>
+                            <div class="col-md-2 col-sm-2 col-xs-2 main__ritem-thumb"><img src="img/24.jpg" alt=""/></div>
+                            <div class="col-md-5 col-sm-7 col-xs-5 main__ritem-title">
+                              <h2>God Eater</h2><span>#250</span>
+                            </div>
+                            <div class="col-md-4 col-sm-2 main__ritem-icon">
+                              <button class="btn btn-nooutline-primary">PLAY</button>
+                              <button class="btn btn-nooutline-primary">LIKE</button>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-md-12 col-sm-12 col-xs-12 hvr-wobble-skew">
+                          <div class="row main__ritem-item">
+                            <div class="col-md-1 col-sm-1 col-xs-1 main__ritem-numberic"><span>02</span></div>
+                            <div class="col-md-2 col-sm-2 col-xs-2 main__ritem-thumb"><img src="img/25.jpg" alt=""/></div>
+                            <div class="col-md-5 col-sm-7 col-xs-5 main__ritem-title">
+                              <h2>Ajin</h2><span>#250</span>
+                            </div>
+                            <div class="col-md-4 col-sm-2 main__ritem-icon">
+                              <button class="btn btn-nooutline-primary">PLAY</button>
+                              <button class="btn btn-nooutline-primary">LIKE</button>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-md-12 col-sm-12 col-xs-12 hvr-wobble-skew">
+                          <div class="row main__ritem-item">
+                            <div class="col-md-1 col-sm-1 col-xs-1 main__ritem-numberic"><span>03</span></div>
+                            <div class="col-md-2 col-sm-2 col-xs-2 main__ritem-thumb"><img src="img/26.jpg" alt=""/></div>
+                            <div class="col-md-5 col-sm-7 col-xs-5 main__ritem-title">
+                              <h2>Gurren Lagann</h2><span>#250</span>
+                            </div>
+                            <div class="col-md-4 col-sm-2 main__ritem-icon">
+                              <button class="btn btn-nooutline-primary">PLAY</button>
+                              <button class="btn btn-nooutline-primary">LIKE</button>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-md-12 col-sm-12 col-xs-12 hvr-wobble-skew">
+                          <div class="row main__ritem-item">
+                            <div class="col-md-1 col-sm-1 col-xs-1 main__ritem-numberic"><span>04</span></div>
+                            <div class="col-md-2 col-sm-2 col-xs-2 main__ritem-thumb"><img src="img/27.jpg" alt=""/></div>
+                            <div class="col-md-5 col-sm-7 col-xs-5 main__ritem-title">
+                              <h2>Danmachi</h2><span>#250</span>
+                            </div>
+                            <div class="col-md-4 col-sm-2 main__ritem-icon">
+                              <button class="btn btn-nooutline-primary">PLAY</button>
+                              <button class="btn btn-nooutline-primary">LIKE</button>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-md-12 col-sm-12 col-xs-12 hvr-wobble-skew">
+                          <div class="row main__ritem-item">
+                            <div class="col-md-1 col-sm-1 col-xs-1 main__ritem-numberic"><span>05</span></div>
+                            <div class="col-md-2 col-sm-2 col-xs-2 main__ritem-thumb"><img src="img/28.jpg" alt=""/></div>
+                            <div class="col-md-5 col-sm-7 col-xs-5 main__ritem-title">
+                              <h2>Gintama</h2><span>#250</span>
+                            </div>
+                            <div class="col-md-4 col-sm-2 main__ritem-icon">
+                              <button class="btn btn-nooutline-primary">PLAY</button>
+                              <button class="btn btn-nooutline-primary">LIKE</button>
+                            </div>
+                          </div>
+                        </div>
+                  <div class="main__ritem-showall col-md-12"><span>show all </span><i class="fa fa-chevron-down"></i></div>
+                </div>
+              </div>
+            </div>
+            <div class="main__citem">
+              <div class="row main__header">
+                      <div class="col-md-9 col-sm-7 col-xs-5">
+                        <h3>Popular Anime You May Like</h3>
+                      </div>
+                      <div class="col-md-3 col-sm-5 col-xs-7 main__header--right"><a href="#">show all</a><a href="#"><i class="fa fa-chevron-left"></i></a><a href="#"><i class="fa fa-chevron-right"></i></a></div>
+              </div>
+              <div class="row main__citem-content">
+                      <div class="col-lg-2 col-md-3 col-sm-4 col-xs-6">
+                        <div class="main__citem-item">
+                          <div class="overlay"><img src="img/play.png"/></div><img src="img/13.jpg" alt="" class="img-responsive"/>
+                          <div class="main__citem-des">
+                            <h2>Bikini Warriors</h2><span>#532</span>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-lg-2 col-md-3 col-sm-4 col-xs-6">
+                        <div class="main__citem-item">
+                          <div class="overlay"><img src="img/play.png"/></div><img src="img/14.jpg" alt="" class="img-responsive"/>
+                          <div class="main__citem-des">
+                            <h2>Tokyo Ghoul</h2><span>#235</span>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-lg-2 col-md-3 col-sm-4 col-xs-6">
+                        <div class="main__citem-item">
+                          <div class="overlay"><img src="img/play.png"/></div><img src="img/15.jpg" alt="" class="img-responsive"/>
+                          <div class="main__citem-des">
+                            <h2>Fairy Tail</h2><span>#320</span>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-lg-2 col-md-3 col-sm-4 col-xs-6">
+                        <div class="main__citem-item">
+                          <div class="overlay"><img src="img/play.png"/></div><img src="img/16.jpg" alt="" class="img-responsive"/>
+                          <div class="main__citem-des">
+                            <h2>Hunter x Hunter</h2><span>#23</span>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-lg-2 col-md-3 col-sm-4 col-xs-6">
+                        <div class="main__citem-item">
+                          <div class="overlay"><img src="img/play.png"/></div><img src="img/17.jpg" alt="" class="img-responsive"/>
+                          <div class="main__citem-des">
+                            <h2>Digimon</h2><span>#50</span>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-lg-2 col-md-3 col-sm-4 col-xs-6">
+                        <div class="main__citem-item">
+                          <div class="overlay"><img src="img/play.png"/></div><img src="img/18.jpg" alt="" class="img-responsive"/>
+                          <div class="main__citem-des">
+                            <h2>Gumball</h2><span>#56</span>
+                          </div>
+                        </div>
+                      </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <footer class="footer row">
+        <div class="col-md-12">
+          <div class="wrapper">
+            <div class="row">
+              <div class="col-md-3 col-sm-3 col-xs-6 footer__menu-col3">
+                <ul>
+                  <li><a href="">Anime</a></li>
+                  <li><a href="">Genre</a></li>
+                  <li><a href="">Year</a></li>
+                  <li><a href="">Season</a></li>
+                  <li><a href="">Archive</a></li>
+                </ul>
+              </div>
+              <div class="col-md-3 col-sm-3 col-xs-6 footer__menu-col3">
+                <ul>
+                  <li><a href="">Anime47</a></li>
+                  <li><a href="">Animetvn</a></li>
+                  <li><a href="">Phimmoi</a></li>
+                  <li><a href="">VietDesigner</a></li>
+                  <li><a href="">TechTalk</a></li>
+                </ul>
+              </div>
+              <div class="col-md-6 col-sm-6 footer__menu-col6"><img src="img/footer5.png" alt=""/></div>
+            </div>
+          </div>
+          <div class="row footer__coypright">
+            <div class="col-md-5 col-sm-5 col-xs-12">&copy; Copyright 2016 by linh Inc.</div>
+            <div class="col-md-2 col-sm-2 col-xs-12"><a href="">Term of Use</a></div>
+            <div class="col-md-2 col-sm-2 col-xs-12"><a href="">Privacy Policy</a></div>
+            <div class="col-md-3 col-sm-3 col-xs-12"><a href="">Design by linh Inc.</a></div>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <!-- jQuery-->
+    <script src="components/jquery/dist/jquery.min.js"></script>
+    <!-- jQuery-->
+    <script src="components/Flowtype.js/flowtype.js"></script>
+    <!-- tether-->
+    <script src="components/tether/dist/js/tether.min.js"></script>
+    <!-- bootstrap-->
+    <script src="components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <!-- My script-->
+    <script src="js/functions.js"></script>
   </body>
 </html>
