@@ -1,4 +1,4 @@
-var app = angular.module('webmovie', ['ui.router']);
+var app = angular.module('webmovie', ['ui.router', 'youtube-embed']);
 
 app.config(function ($stateProvider) {
     var homeState = {
@@ -43,170 +43,254 @@ app.controller('MainController', function ($scope, $rootScope, $state) {
         {
             name: "One Piece",
             img: 1,
+            views: 2300,
+            genre: 'Ecchi, Action',
+            producer: 'TV Tokyo',
             video: "https://www.youtube.com/watch?v=o0WWLxqg3iw",
-            description: ""
+            description: "Phần Naruto Shippuuden Vietsub thì tất cả những người bạn của Naruto đều đã trưởng thành, là những Jounin , có những người đã rất nổi trội. Không giống như phần đầu khi chỉ đóng vai trò phụ, tổ chức Akatsuki chiếm lấy vai trò đối nghịch chính trong tham vọng thống trị thế giới. Sau này chính Tobi và Obito đã khơi ngòi chiến tranh Ninja lần thứ tư giữa Ngũ Đại Quốc và Akatsuki mà người đứng phía sau giật dây là Uchiha Madara nhằm thực hiện kế hoạch Nguyệt Nhãn của hắn. "
         },
         {
             name: "Naruto",
             img: 2,
+            views: 2300,
+            genre: 'Ecchi, Action',
+            producer: 'TV Tokyo',
             video: "https://www.youtube.com/watch?v=Hch6eF9Xf0A",
-            description: ""
+            description: "Phần Naruto Shippuuden Vietsub thì tất cả những người bạn của Naruto đều đã trưởng thành, là những Jounin , có những người đã rất nổi trội. Không giống như phần đầu khi chỉ đóng vai trò phụ, tổ chức Akatsuki chiếm lấy vai trò đối nghịch chính trong tham vọng thống trị thế giới. Sau này chính Tobi và Obito đã khơi ngòi chiến tranh Ninja lần thứ tư giữa Ngũ Đại Quốc và Akatsuki mà người đứng phía sau giật dây là Uchiha Madara nhằm thực hiện kế hoạch Nguyệt Nhãn của hắn. "
         },
         {
             name: "Fairy Tail",
             img: 3,
+            views: 2300,
+            genre: 'Ecchi, Action',
+            producer: 'TV Tokyo',
             video: "https://www.youtube.com/watch?v=Z2omMAFJGIQ",
-            description: ""
+            description: "Phần Naruto Shippuuden Vietsub thì tất cả những người bạn của Naruto đều đã trưởng thành, là những Jounin , có những người đã rất nổi trội. Không giống như phần đầu khi chỉ đóng vai trò phụ, tổ chức Akatsuki chiếm lấy vai trò đối nghịch chính trong tham vọng thống trị thế giới. Sau này chính Tobi và Obito đã khơi ngòi chiến tranh Ninja lần thứ tư giữa Ngũ Đại Quốc và Akatsuki mà người đứng phía sau giật dây là Uchiha Madara nhằm thực hiện kế hoạch Nguyệt Nhãn của hắn. "
         },
         {
             name: "Bleach",
             img: 4,
+            views: 2300,
+            genre: 'Ecchi, Action',
+            producer: 'TV Tokyo',
             video: "https://www.youtube.com/watch?v=RuXIPZXKegs",
-            description: ""
+            description: "Phần Naruto Shippuuden Vietsub thì tất cả những người bạn của Naruto đều đã trưởng thành, là những Jounin , có những người đã rất nổi trội. Không giống như phần đầu khi chỉ đóng vai trò phụ, tổ chức Akatsuki chiếm lấy vai trò đối nghịch chính trong tham vọng thống trị thế giới. Sau này chính Tobi và Obito đã khơi ngòi chiến tranh Ninja lần thứ tư giữa Ngũ Đại Quốc và Akatsuki mà người đứng phía sau giật dây là Uchiha Madara nhằm thực hiện kế hoạch Nguyệt Nhãn của hắn. "
         },
         {
             name: "One Punch Man",
             img: 5,
+            views: 2300,
+            genre: 'Ecchi, Action',
+            producer: 'TV Tokyo',
             video: "https://www.youtube.com/watch?v=saHJ_S-MEiY",
-            description: ""
+            description: "Phần Naruto Shippuuden Vietsub thì tất cả những người bạn của Naruto đều đã trưởng thành, là những Jounin , có những người đã rất nổi trội. Không giống như phần đầu khi chỉ đóng vai trò phụ, tổ chức Akatsuki chiếm lấy vai trò đối nghịch chính trong tham vọng thống trị thế giới. Sau này chính Tobi và Obito đã khơi ngòi chiến tranh Ninja lần thứ tư giữa Ngũ Đại Quốc và Akatsuki mà người đứng phía sau giật dây là Uchiha Madara nhằm thực hiện kế hoạch Nguyệt Nhãn của hắn. "
         },
         {
             name: "Dragon Ball Super",
             img: 6,
+            views: 2300,
+            genre: 'Ecchi, Action',
+            producer: 'TV Tokyo',
             video: "https://www.youtube.com/watch?v=5U5AKnvShQE",
-            description: ""
+            description: "Phần Naruto Shippuuden Vietsub thì tất cả những người bạn của Naruto đều đã trưởng thành, là những Jounin , có những người đã rất nổi trội. Không giống như phần đầu khi chỉ đóng vai trò phụ, tổ chức Akatsuki chiếm lấy vai trò đối nghịch chính trong tham vọng thống trị thế giới. Sau này chính Tobi và Obito đã khơi ngòi chiến tranh Ninja lần thứ tư giữa Ngũ Đại Quốc và Akatsuki mà người đứng phía sau giật dây là Uchiha Madara nhằm thực hiện kế hoạch Nguyệt Nhãn của hắn. "
         },
         {
             name: "Pokemon",
             img: 7,
+            views: 2300,
+            genre: 'Ecchi, Action',
+            producer: 'TV Tokyo',
             video: "https://www.youtube.com/watch?v=kCv4imDftwk",
-            description: ""
+            description: "Phần Naruto Shippuuden Vietsub thì tất cả những người bạn của Naruto đều đã trưởng thành, là những Jounin , có những người đã rất nổi trội. Không giống như phần đầu khi chỉ đóng vai trò phụ, tổ chức Akatsuki chiếm lấy vai trò đối nghịch chính trong tham vọng thống trị thế giới. Sau này chính Tobi và Obito đã khơi ngòi chiến tranh Ninja lần thứ tư giữa Ngũ Đại Quốc và Akatsuki mà người đứng phía sau giật dây là Uchiha Madara nhằm thực hiện kế hoạch Nguyệt Nhãn của hắn. "
         },
         {
             name: "Black Rock Shooter",
             img: 8,
+            views: 2300,
+            genre: 'Ecchi, Action',
+            producer: 'TV Tokyo',
             video: "https://www.youtube.com/watch?v=H0XssHL6ka4",
-            description: ""
+            description: "Phần Naruto Shippuuden Vietsub thì tất cả những người bạn của Naruto đều đã trưởng thành, là những Jounin , có những người đã rất nổi trội. Không giống như phần đầu khi chỉ đóng vai trò phụ, tổ chức Akatsuki chiếm lấy vai trò đối nghịch chính trong tham vọng thống trị thế giới. Sau này chính Tobi và Obito đã khơi ngòi chiến tranh Ninja lần thứ tư giữa Ngũ Đại Quốc và Akatsuki mà người đứng phía sau giật dây là Uchiha Madara nhằm thực hiện kế hoạch Nguyệt Nhãn của hắn. "
         },
         {
             name: "Sword Art Online",
             img: 9,
+            views: 2300,
+            genre: 'Ecchi, Action',
+            producer: 'TV Tokyo',
             video: "https://www.youtube.com/watch?v=dkvaprtP6L8",
-            description: ""
+            description: "Phần Naruto Shippuuden Vietsub thì tất cả những người bạn của Naruto đều đã trưởng thành, là những Jounin , có những người đã rất nổi trội. Không giống như phần đầu khi chỉ đóng vai trò phụ, tổ chức Akatsuki chiếm lấy vai trò đối nghịch chính trong tham vọng thống trị thế giới. Sau này chính Tobi và Obito đã khơi ngòi chiến tranh Ninja lần thứ tư giữa Ngũ Đại Quốc và Akatsuki mà người đứng phía sau giật dây là Uchiha Madara nhằm thực hiện kế hoạch Nguyệt Nhãn của hắn. "
         },
         {
             name: "5cm/s",
             img: 10,
+            views: 2300,
+            genre: 'Ecchi, Action',
+            producer: 'TV Tokyo',
             video: "https://www.youtube.com/watch?v=WAT-Gy6QsTY",
-            description: ""
+            description: "Phần Naruto Shippuuden Vietsub thì tất cả những người bạn của Naruto đều đã trưởng thành, là những Jounin , có những người đã rất nổi trội. Không giống như phần đầu khi chỉ đóng vai trò phụ, tổ chức Akatsuki chiếm lấy vai trò đối nghịch chính trong tham vọng thống trị thế giới. Sau này chính Tobi và Obito đã khơi ngòi chiến tranh Ninja lần thứ tư giữa Ngũ Đại Quốc và Akatsuki mà người đứng phía sau giật dây là Uchiha Madara nhằm thực hiện kế hoạch Nguyệt Nhãn của hắn. "
         },
         {
             name: "Date A Live",
             img: 11,
+            views: 2300,
+            genre: 'Ecchi, Action',
+            producer: 'TV Tokyo',
             video: "https://www.youtube.com/watch?v=AYTVnt5tNx4",
-            description: ""
+            description: "Phần Naruto Shippuuden Vietsub thì tất cả những người bạn của Naruto đều đã trưởng thành, là những Jounin , có những người đã rất nổi trội. Không giống như phần đầu khi chỉ đóng vai trò phụ, tổ chức Akatsuki chiếm lấy vai trò đối nghịch chính trong tham vọng thống trị thế giới. Sau này chính Tobi và Obito đã khơi ngòi chiến tranh Ninja lần thứ tư giữa Ngũ Đại Quốc và Akatsuki mà người đứng phía sau giật dây là Uchiha Madara nhằm thực hiện kế hoạch Nguyệt Nhãn của hắn. "
         },
         {
             name: "Attack on the Titan",
             img: 12,
+            views: 2300,
+            genre: 'Ecchi, Action',
+            producer: 'TV Tokyo',
             video: "https://www.youtube.com/watch?v=XMeihVthcGI",
-            description: ""
+            description: "Phần Naruto Shippuuden Vietsub thì tất cả những người bạn của Naruto đều đã trưởng thành, là những Jounin , có những người đã rất nổi trội. Không giống như phần đầu khi chỉ đóng vai trò phụ, tổ chức Akatsuki chiếm lấy vai trò đối nghịch chính trong tham vọng thống trị thế giới. Sau này chính Tobi và Obito đã khơi ngòi chiến tranh Ninja lần thứ tư giữa Ngũ Đại Quốc và Akatsuki mà người đứng phía sau giật dây là Uchiha Madara nhằm thực hiện kế hoạch Nguyệt Nhãn của hắn. "
         },
         {
             name: "Bikini Warriors",
             img: 13,
+            views: 2300,
+            genre: 'Ecchi, Action',
+            producer: 'TV Tokyo',
             video: "https://www.youtube.com/watch?v=DUivZxMCxJc",
-            description: ""
+            description: "Phần Naruto Shippuuden Vietsub thì tất cả những người bạn của Naruto đều đã trưởng thành, là những Jounin , có những người đã rất nổi trội. Không giống như phần đầu khi chỉ đóng vai trò phụ, tổ chức Akatsuki chiếm lấy vai trò đối nghịch chính trong tham vọng thống trị thế giới. Sau này chính Tobi và Obito đã khơi ngòi chiến tranh Ninja lần thứ tư giữa Ngũ Đại Quốc và Akatsuki mà người đứng phía sau giật dây là Uchiha Madara nhằm thực hiện kế hoạch Nguyệt Nhãn của hắn. "
         },
         {
             name: "Tokyo Ghoul",
             img: 14,
+            views: 2300,
+            genre: 'Ecchi, Action',
+            producer: 'TV Tokyo',
             video: "https://www.youtube.com/watch?v=rw8FlCddO08",
-            description: ""
+            description: "Phần Naruto Shippuuden Vietsub thì tất cả những người bạn của Naruto đều đã trưởng thành, là những Jounin , có những người đã rất nổi trội. Không giống như phần đầu khi chỉ đóng vai trò phụ, tổ chức Akatsuki chiếm lấy vai trò đối nghịch chính trong tham vọng thống trị thế giới. Sau này chính Tobi và Obito đã khơi ngòi chiến tranh Ninja lần thứ tư giữa Ngũ Đại Quốc và Akatsuki mà người đứng phía sau giật dây là Uchiha Madara nhằm thực hiện kế hoạch Nguyệt Nhãn của hắn. "
         },
         {
             name: "Fairy Tail",
             img: 15,
+            views: 2300,
+            genre: 'Ecchi, Action',
+            producer: 'TV Tokyo',
             video: "https://www.youtube.com/watch?v=L26ohVRPl0U",
-            description: ""
+            description: "Phần Naruto Shippuuden Vietsub thì tất cả những người bạn của Naruto đều đã trưởng thành, là những Jounin , có những người đã rất nổi trội. Không giống như phần đầu khi chỉ đóng vai trò phụ, tổ chức Akatsuki chiếm lấy vai trò đối nghịch chính trong tham vọng thống trị thế giới. Sau này chính Tobi và Obito đã khơi ngòi chiến tranh Ninja lần thứ tư giữa Ngũ Đại Quốc và Akatsuki mà người đứng phía sau giật dây là Uchiha Madara nhằm thực hiện kế hoạch Nguyệt Nhãn của hắn. "
         },
         {
             name: "Hunter x Hunter",
             img: 16,
-            video: "",
-            description: ""
+            views: 2300,
+            genre: 'Ecchi, Action',
+            producer: 'TV Tokyo',
+            video: "https://www.youtube.com/watch?v=hZsN0jUOr7s",
+            description: "Phần Naruto Shippuuden Vietsub thì tất cả những người bạn của Naruto đều đã trưởng thành, là những Jounin , có những người đã rất nổi trội. Không giống như phần đầu khi chỉ đóng vai trò phụ, tổ chức Akatsuki chiếm lấy vai trò đối nghịch chính trong tham vọng thống trị thế giới. Sau này chính Tobi và Obito đã khơi ngòi chiến tranh Ninja lần thứ tư giữa Ngũ Đại Quốc và Akatsuki mà người đứng phía sau giật dây là Uchiha Madara nhằm thực hiện kế hoạch Nguyệt Nhãn của hắn. "
         },
         {
             name: "Digimon",
             img: 17,
-            video: "",
-            description: ""
+            views: 2300,
+            genre: 'Ecchi, Action',
+            producer: 'TV Tokyo',
+            video: "https://www.youtube.com/watch?v=s1X-2XMV0zM",
+            description: "Phần Naruto Shippuuden Vietsub thì tất cả những người bạn của Naruto đều đã trưởng thành, là những Jounin , có những người đã rất nổi trội. Không giống như phần đầu khi chỉ đóng vai trò phụ, tổ chức Akatsuki chiếm lấy vai trò đối nghịch chính trong tham vọng thống trị thế giới. Sau này chính Tobi và Obito đã khơi ngòi chiến tranh Ninja lần thứ tư giữa Ngũ Đại Quốc và Akatsuki mà người đứng phía sau giật dây là Uchiha Madara nhằm thực hiện kế hoạch Nguyệt Nhãn của hắn. "
         },
         {
             name: "Gumball",
             img: 18,
-            video: "",
-            description: ""
+            views: 2300,
+            genre: 'Ecchi, Action',
+            producer: 'TV Tokyo',
+            video: "https://www.youtube.com/watch?v=xvks9zNnNHc",
+            description: "Phần Naruto Shippuuden Vietsub thì tất cả những người bạn của Naruto đều đã trưởng thành, là những Jounin , có những người đã rất nổi trội. Không giống như phần đầu khi chỉ đóng vai trò phụ, tổ chức Akatsuki chiếm lấy vai trò đối nghịch chính trong tham vọng thống trị thế giới. Sau này chính Tobi và Obito đã khơi ngòi chiến tranh Ninja lần thứ tư giữa Ngũ Đại Quốc và Akatsuki mà người đứng phía sau giật dây là Uchiha Madara nhằm thực hiện kế hoạch Nguyệt Nhãn của hắn. "
         },
         {
             name: "Stand By Me",
             img: 19,
-            video: "",
-            description: ""
+            views: 2300,
+            genre: 'Ecchi, Action',
+            producer: 'TV Tokyo',
+            video: "https://www.youtube.com/watch?v=_rNFefxiLv0",
+            description: "Phần Naruto Shippuuden Vietsub thì tất cả những người bạn của Naruto đều đã trưởng thành, là những Jounin , có những người đã rất nổi trội. Không giống như phần đầu khi chỉ đóng vai trò phụ, tổ chức Akatsuki chiếm lấy vai trò đối nghịch chính trong tham vọng thống trị thế giới. Sau này chính Tobi và Obito đã khơi ngòi chiến tranh Ninja lần thứ tư giữa Ngũ Đại Quốc và Akatsuki mà người đứng phía sau giật dây là Uchiha Madara nhằm thực hiện kế hoạch Nguyệt Nhãn của hắn. "
         },
         {
             name: "Adventure Time",
             img: 20,
-            video: "",
-            description: ""
+            views: 2300,
+            genre: 'Ecchi, Action',
+            producer: 'TV Tokyo',
+            video: "https://www.youtube.com/watch?v=48UwWuH2_JQ",
+            description: "Phần Naruto Shippuuden Vietsub thì tất cả những người bạn của Naruto đều đã trưởng thành, là những Jounin , có những người đã rất nổi trội. Không giống như phần đầu khi chỉ đóng vai trò phụ, tổ chức Akatsuki chiếm lấy vai trò đối nghịch chính trong tham vọng thống trị thế giới. Sau này chính Tobi và Obito đã khơi ngòi chiến tranh Ninja lần thứ tư giữa Ngũ Đại Quốc và Akatsuki mà người đứng phía sau giật dây là Uchiha Madara nhằm thực hiện kế hoạch Nguyệt Nhãn của hắn. "
         },
         {
-            name: "InuYasha",
+            name: "Inu Yasha",
             img: 21,
-            video: "",
-            description: ""
+            views: 2300,
+            genre: 'Ecchi, Action',
+            producer: 'TV Tokyo',
+            video: "https://www.youtube.com/watch?v=k6Crw6OMYdY",
+            description: "Phần Naruto Shippuuden Vietsub thì tất cả những người bạn của Naruto đều đã trưởng thành, là những Jounin , có những người đã rất nổi trội. Không giống như phần đầu khi chỉ đóng vai trò phụ, tổ chức Akatsuki chiếm lấy vai trò đối nghịch chính trong tham vọng thống trị thế giới. Sau này chính Tobi và Obito đã khơi ngòi chiến tranh Ninja lần thứ tư giữa Ngũ Đại Quốc và Akatsuki mà người đứng phía sau giật dây là Uchiha Madara nhằm thực hiện kế hoạch Nguyệt Nhãn của hắn. "
         },
         {
             name: "MasouGakuen HxH",
             img: 22,
+            views: 2300,
+            genre: 'Ecchi, Action',
+            producer: 'TV Tokyo',
             video: "",
-            description: ""
+            description: "Phần Naruto Shippuuden Vietsub thì tất cả những người bạn của Naruto đều đã trưởng thành, là những Jounin , có những người đã rất nổi trội. Không giống như phần đầu khi chỉ đóng vai trò phụ, tổ chức Akatsuki chiếm lấy vai trò đối nghịch chính trong tham vọng thống trị thế giới. Sau này chính Tobi và Obito đã khơi ngòi chiến tranh Ninja lần thứ tư giữa Ngũ Đại Quốc và Akatsuki mà người đứng phía sau giật dây là Uchiha Madara nhằm thực hiện kế hoạch Nguyệt Nhãn của hắn. "
         },
         {
             name: "Overload",
             img: 23,
-            video: "",
-            description: ""
+            views: 2300,
+            genre: 'Ecchi, Action',
+            producer: 'TV Tokyo',
+            video: "https://www.youtube.com/watch?v=XVMdJuRQEBQ",
+            description: "Phần Naruto Shippuuden Vietsub thì tất cả những người bạn của Naruto đều đã trưởng thành, là những Jounin , có những người đã rất nổi trội. Không giống như phần đầu khi chỉ đóng vai trò phụ, tổ chức Akatsuki chiếm lấy vai trò đối nghịch chính trong tham vọng thống trị thế giới. Sau này chính Tobi và Obito đã khơi ngòi chiến tranh Ninja lần thứ tư giữa Ngũ Đại Quốc và Akatsuki mà người đứng phía sau giật dây là Uchiha Madara nhằm thực hiện kế hoạch Nguyệt Nhãn của hắn. "
         },
         {
-            name: "GodEater",
+            name: "God Eater",
             img: 24,
-            video: "",
-            description: ""
+            views: 2300,
+            genre: 'Ecchi, Action',
+            producer: 'TV Tokyo',
+            video: "https://www.youtube.com/watch?v=JnKK1wsSjFQ",
+            description: "Phần Naruto Shippuuden Vietsub thì tất cả những người bạn của Naruto đều đã trưởng thành, là những Jounin , có những người đã rất nổi trội. Không giống như phần đầu khi chỉ đóng vai trò phụ, tổ chức Akatsuki chiếm lấy vai trò đối nghịch chính trong tham vọng thống trị thế giới. Sau này chính Tobi và Obito đã khơi ngòi chiến tranh Ninja lần thứ tư giữa Ngũ Đại Quốc và Akatsuki mà người đứng phía sau giật dây là Uchiha Madara nhằm thực hiện kế hoạch Nguyệt Nhãn của hắn. "
         },
         {
             name: "Ajin",
             img: 25,
-            video: "",
-            description: ""
+            views: 2300,
+            genre: 'Ecchi, Action',
+            producer: 'TV Tokyo',
+            video: "https://www.youtube.com/watch?v=dOqYibiWIec",
+            description: "Phần Naruto Shippuuden Vietsub thì tất cả những người bạn của Naruto đều đã trưởng thành, là những Jounin , có những người đã rất nổi trội. Không giống như phần đầu khi chỉ đóng vai trò phụ, tổ chức Akatsuki chiếm lấy vai trò đối nghịch chính trong tham vọng thống trị thế giới. Sau này chính Tobi và Obito đã khơi ngòi chiến tranh Ninja lần thứ tư giữa Ngũ Đại Quốc và Akatsuki mà người đứng phía sau giật dây là Uchiha Madara nhằm thực hiện kế hoạch Nguyệt Nhãn của hắn. "
         },
         {
             name: "Gurren Lagann",
             img: 26,
-            video: "",
-            description: ""
+            views: 2300,
+            genre: 'Ecchi, Action',
+            producer: 'TV Tokyo',
+            video: "https://www.youtube.com/watch?v=aNQvLECht08",
+            description: "Phần Naruto Shippuuden Vietsub thì tất cả những người bạn của Naruto đều đã trưởng thành, là những Jounin , có những người đã rất nổi trội. Không giống như phần đầu khi chỉ đóng vai trò phụ, tổ chức Akatsuki chiếm lấy vai trò đối nghịch chính trong tham vọng thống trị thế giới. Sau này chính Tobi và Obito đã khơi ngòi chiến tranh Ninja lần thứ tư giữa Ngũ Đại Quốc và Akatsuki mà người đứng phía sau giật dây là Uchiha Madara nhằm thực hiện kế hoạch Nguyệt Nhãn của hắn. "
         },
         {
             name: "Danmachi",
             img: 27,
-            video: "",
-            description: ""
+            views: 2300,
+            genre: 'Ecchi, Action',
+            producer: 'TV Tokyo',
+            video: "https://www.youtube.com/watch?v=dPFq1-WGVM8",
+            description: "Phần Naruto Shippuuden Vietsub thì tất cả những người bạn của Naruto đều đã trưởng thành, là những Jounin , có những người đã rất nổi trội. Không giống như phần đầu khi chỉ đóng vai trò phụ, tổ chức Akatsuki chiếm lấy vai trò đối nghịch chính trong tham vọng thống trị thế giới. Sau này chính Tobi và Obito đã khơi ngòi chiến tranh Ninja lần thứ tư giữa Ngũ Đại Quốc và Akatsuki mà người đứng phía sau giật dây là Uchiha Madara nhằm thực hiện kế hoạch Nguyệt Nhãn của hắn. "
         },
         {
             name: "Gintama",
             img: 28,
-            video: "",
-            description: ""
+            views: 2300,
+            genre: 'Ecchi, Action',
+            producer: 'TV Tokyo',
+            video: "https://www.youtube.com/watch?v=EiU4RP84xWc",
+            description: "Phần Naruto Shippuuden Vietsub thì tất cả những người bạn của Naruto đều đã trưởng thành, là những Jounin , có những người đã rất nổi trội. Không giống như phần đầu khi chỉ đóng vai trò phụ, tổ chức Akatsuki chiếm lấy vai trò đối nghịch chính trong tham vọng thống trị thế giới. Sau này chính Tobi và Obito đã khơi ngòi chiến tranh Ninja lần thứ tư giữa Ngũ Đại Quốc và Akatsuki mà người đứng phía sau giật dây là Uchiha Madara nhằm thực hiện kế hoạch Nguyệt Nhãn của hắn. "
         }
     ];
     $scope.photos1 = [];
@@ -230,15 +314,18 @@ app.controller('MainController', function ($scope, $rootScope, $state) {
     make($scope.photos5, 23, 28);
 });
 
-app.controller('ViewController', function ($scope, $rootScope, $state) {
+app.controller('ViewController', function ($scope, $rootScope, $state, youtubeEmbedUtils) {
     $scope.video = {};
-    console.log($rootScope.data);
     function checkMovie(id) {
         angular.forEach($rootScope.data, function(val){
-           if(val.img === id)
-               $scope.video = val;
+            // console.log(val.img);
+           if(val.img == id) {
+              $scope.video = val;
+           }
+               
         });
     }
-    
     checkMovie($state.params.id);
+    // $scope.theBestVideo = 'sMKoNBRZM1M';
+    $scope.theBestVideo = youtubeEmbedUtils.getIdFromURL($scope.video.video);
 });
