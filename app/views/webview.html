@@ -2,7 +2,7 @@
     <div class="row main__watch-header">
         <div class="col-md-8 col-sm-12 col-xs-12">
             <div class="main__watch-video">
-                <iframe width="100%" height="500" src="{{data.video}}" frameborder="0" allowfullscreen=""></iframe>
+                <iframe width="100%" height="500" src="{{video.video}}" frameborder="0" allowfullscreen=""></iframe>
             </div>
         </div>
         <div class="col-md-4 col-sm-12 col-xs-12">
@@ -75,12 +75,12 @@
     <div class="row main__watch-content">
         <div class="col-md-8">
             <div class="main__watch-info">
-                <h1>{{data.name}}</h1>
+                <h1>{{video.name}}</h1>
                 <div class="row">
                     <div class="col-md-8"><span id="follow"><i class="fa fa-plus"></i> FOLLOW</span></div>
-                    <div class="col-md-4"><span id="views" class="hvr-underline-from-left"><i class="fa fa-heart"></i> {{data.views}} views</span></div>
-                </div><span><i class="fa fa-list"></i> {{data.genre}}</span><span><i class="fa fa-building"></i> {{data.producer}}</span>
-                <div class="description">{{data.description}}</div>
+                    <div class="col-md-4"><span id="views" class="hvr-underline-from-left"><i class="fa fa-heart"></i> {{video.views}} views</span></div>
+                </div><span><i class="fa fa-list"></i> {{video.genre}}</span><span><i class="fa fa-building"></i> {{video.producer}}</span>
+                <div class="description">{{video.description}}</div>
             </div>
             <div class="main__watch-comments">
                 <div data-href="https://developers.facebook.com/docs/plugins/comments#configurator" data-width="100%" data-numposts="5" class="fb-comments"></div>
