@@ -39,15 +39,15 @@ app.controller('NavController', function ($scope, $location, $anchorScroll) {
 });
 
 app.controller('MainController', function ($scope, $rootScope, $state) {
-    $scope.data = [
+    $rootScope.data = [
         {
-            name: "Naruto",
+            name: "One Piece",
             img: 1,
             video: "",
             description: ""
         },
         {
-            name: "One Piece",
+            name: "Naruto",
             img: 2,
             video: "",
             description: ""
@@ -228,4 +228,16 @@ app.controller('MainController', function ($scope, $rootScope, $state) {
     make($scope.photos3, 12, 18);
     make($scope.photos4, 18, 23);
     make($scope.photos5, 23, 28);
+});
+
+app.controller('ViewController', function ($scope, $rootScope, $state) {
+    $scope.video = {};
+    function checkMovie(id) {
+        angular.forEach($rootScope.data, function(val){
+           if(val.img === id)
+               $scope.video = val;
+        });
+    }
+    
+    checkMovie($state.params.id);
 });
