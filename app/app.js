@@ -43,91 +43,91 @@ app.controller('MainController', function ($scope, $rootScope, $state) {
         {
             name: "One Piece",
             img: 1,
-            video: "",
+            video: "https://www.youtube.com/watch?v=o0WWLxqg3iw",
             description: ""
         },
         {
             name: "Naruto",
             img: 2,
-            video: "",
+            video: "https://www.youtube.com/watch?v=Hch6eF9Xf0A",
             description: ""
         },
         {
             name: "Fairy Tail",
             img: 3,
-            video: "",
+            video: "https://www.youtube.com/watch?v=Z2omMAFJGIQ",
             description: ""
         },
         {
             name: "Bleach",
             img: 4,
-            video: "",
+            video: "https://www.youtube.com/watch?v=RuXIPZXKegs",
             description: ""
         },
         {
             name: "One Punch Man",
             img: 5,
-            video: "",
+            video: "https://www.youtube.com/watch?v=saHJ_S-MEiY",
             description: ""
         },
         {
             name: "Dragon Ball Super",
             img: 6,
-            video: "",
+            video: "https://www.youtube.com/watch?v=5U5AKnvShQE",
             description: ""
         },
         {
             name: "Pokemon",
-            img: 6,
-            video: "",
+            img: 7,
+            video: "https://www.youtube.com/watch?v=kCv4imDftwk",
             description: ""
         },
         {
             name: "Black Rock Shooter",
             img: 8,
-            video: "",
+            video: "https://www.youtube.com/watch?v=H0XssHL6ka4",
             description: ""
         },
         {
             name: "Sword Art Online",
             img: 9,
-            video: "",
+            video: "https://www.youtube.com/watch?v=dkvaprtP6L8",
             description: ""
         },
         {
             name: "5cm/s",
             img: 10,
-            video: "",
+            video: "https://www.youtube.com/watch?v=WAT-Gy6QsTY",
             description: ""
         },
         {
             name: "Date A Live",
             img: 11,
-            video: "",
+            video: "https://www.youtube.com/watch?v=AYTVnt5tNx4",
             description: ""
         },
         {
             name: "Attack on the Titan",
             img: 12,
-            video: "",
+            video: "https://www.youtube.com/watch?v=XMeihVthcGI",
             description: ""
         },
         {
             name: "Bikini Warriors",
             img: 13,
-            video: "",
+            video: "https://www.youtube.com/watch?v=DUivZxMCxJc",
             description: ""
         },
         {
             name: "Tokyo Ghoul",
             img: 14,
-            video: "",
+            video: "https://www.youtube.com/watch?v=rw8FlCddO08",
             description: ""
         },
         {
             name: "Fairy Tail",
             img: 15,
-            video: "",
+            video: "https://www.youtube.com/watch?v=L26ohVRPl0U",
             description: ""
         },
         {
