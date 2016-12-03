@@ -12,9 +12,16 @@ app.config(function ($stateProvider) {
         url: '/movie/:id',
         templateUrl: 'app/views/webview.html'
     }
+    
+    var labState = {
+        name: 'lab',
+        url: '/lab',
+        templateUrl: 'app/views/weblab.html'
+    }
 
     $stateProvider.state(homeState);
     $stateProvider.state(aboutState);
+    $stateProvider.state(labState);
 });
 
 app.controller('NavController', function ($scope, $location, $anchorScroll) {
