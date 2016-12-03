@@ -43,7 +43,7 @@ app.controller('MainController', function ($scope, $rootScope, $state) {
         {
             name: "One Piece",
             img: 1,
-            views: 2300,
+            views: 1300,
             genre: 'Ecchi, Action',
             producer: 'TV Tokyo',
             video: "https://www.youtube.com/watch?v=o0WWLxqg3iw",
@@ -52,7 +52,7 @@ app.controller('MainController', function ($scope, $rootScope, $state) {
         {
             name: "Naruto",
             img: 2,
-            views: 2300,
+            views: 2390,
             genre: 'Ecchi, Action',
             producer: 'TV Tokyo',
             video: "https://www.youtube.com/watch?v=Hch6eF9Xf0A",
@@ -61,7 +61,7 @@ app.controller('MainController', function ($scope, $rootScope, $state) {
         {
             name: "Fairy Tail",
             img: 3,
-            views: 2300,
+            views: 5300,
             genre: 'Ecchi, Action',
             producer: 'TV Tokyo',
             video: "https://www.youtube.com/watch?v=Z2omMAFJGIQ",
@@ -70,7 +70,7 @@ app.controller('MainController', function ($scope, $rootScope, $state) {
         {
             name: "Bleach",
             img: 4,
-            views: 2300,
+            views: 7300,
             genre: 'Ecchi, Action',
             producer: 'TV Tokyo',
             video: "https://www.youtube.com/watch?v=RuXIPZXKegs",
@@ -79,7 +79,7 @@ app.controller('MainController', function ($scope, $rootScope, $state) {
         {
             name: "One Punch Man",
             img: 5,
-            views: 2300,
+            views: 240,
             genre: 'Ecchi, Action',
             producer: 'TV Tokyo',
             video: "https://www.youtube.com/watch?v=saHJ_S-MEiY",
@@ -88,7 +88,7 @@ app.controller('MainController', function ($scope, $rootScope, $state) {
         {
             name: "Dragon Ball Super",
             img: 6,
-            views: 2300,
+            views: 9300,
             genre: 'Ecchi, Action',
             producer: 'TV Tokyo',
             video: "https://www.youtube.com/watch?v=5U5AKnvShQE",
@@ -97,7 +97,7 @@ app.controller('MainController', function ($scope, $rootScope, $state) {
         {
             name: "Pokemon",
             img: 7,
-            views: 2300,
+            views: 1720,
             genre: 'Ecchi, Action',
             producer: 'TV Tokyo',
             video: "https://www.youtube.com/watch?v=kCv4imDftwk",
@@ -106,7 +106,7 @@ app.controller('MainController', function ($scope, $rootScope, $state) {
         {
             name: "Black Rock Shooter",
             img: 8,
-            views: 2300,
+            views: 2309,
             genre: 'Ecchi, Action',
             producer: 'TV Tokyo',
             video: "https://www.youtube.com/watch?v=H0XssHL6ka4",
@@ -115,7 +115,7 @@ app.controller('MainController', function ($scope, $rootScope, $state) {
         {
             name: "Sword Art Online",
             img: 9,
-            views: 2300,
+            views: 2800,
             genre: 'Ecchi, Action',
             producer: 'TV Tokyo',
             video: "https://www.youtube.com/watch?v=dkvaprtP6L8",
@@ -169,7 +169,7 @@ app.controller('MainController', function ($scope, $rootScope, $state) {
         {
             name: "Fairy Tail",
             img: 15,
-            views: 2300,
+            views: 290,
             genre: 'Ecchi, Action',
             producer: 'TV Tokyo',
             video: "https://www.youtube.com/watch?v=L26ohVRPl0U",
@@ -178,7 +178,7 @@ app.controller('MainController', function ($scope, $rootScope, $state) {
         {
             name: "Hunter x Hunter",
             img: 16,
-            views: 2300,
+            views: 640,
             genre: 'Ecchi, Action',
             producer: 'TV Tokyo',
             video: "https://www.youtube.com/watch?v=hZsN0jUOr7s",
@@ -187,7 +187,7 @@ app.controller('MainController', function ($scope, $rootScope, $state) {
         {
             name: "Digimon",
             img: 17,
-            views: 2300,
+            views: 1350,
             genre: 'Ecchi, Action',
             producer: 'TV Tokyo',
             video: "https://www.youtube.com/watch?v=s1X-2XMV0zM",
@@ -196,7 +196,7 @@ app.controller('MainController', function ($scope, $rootScope, $state) {
         {
             name: "Gumball",
             img: 18,
-            views: 2300,
+            views: 2370,
             genre: 'Ecchi, Action',
             producer: 'TV Tokyo',
             video: "https://www.youtube.com/watch?v=xvks9zNnNHc",
@@ -214,7 +214,7 @@ app.controller('MainController', function ($scope, $rootScope, $state) {
         {
             name: "Adventure Time",
             img: 20,
-            views: 2300,
+            views: 2330,
             genre: 'Ecchi, Action',
             producer: 'TV Tokyo',
             video: "https://www.youtube.com/watch?v=48UwWuH2_JQ",
@@ -223,7 +223,7 @@ app.controller('MainController', function ($scope, $rootScope, $state) {
         {
             name: "Inu Yasha",
             img: 21,
-            views: 2300,
+            views: 1750,
             genre: 'Ecchi, Action',
             producer: 'TV Tokyo',
             video: "https://www.youtube.com/watch?v=k6Crw6OMYdY",
@@ -232,7 +232,7 @@ app.controller('MainController', function ($scope, $rootScope, $state) {
         {
             name: "MasouGakuen HxH",
             img: 22,
-            views: 2300,
+            views: 870,
             genre: 'Ecchi, Action',
             producer: 'TV Tokyo',
             video: "",
@@ -241,7 +241,7 @@ app.controller('MainController', function ($scope, $rootScope, $state) {
         {
             name: "Overload",
             img: 23,
-            views: 2300,
+            views: 1700,
             genre: 'Ecchi, Action',
             producer: 'TV Tokyo',
             video: "https://www.youtube.com/watch?v=XVMdJuRQEBQ",
@@ -250,7 +250,7 @@ app.controller('MainController', function ($scope, $rootScope, $state) {
         {
             name: "God Eater",
             img: 24,
-            views: 2300,
+            views: 250,
             genre: 'Ecchi, Action',
             producer: 'TV Tokyo',
             video: "https://www.youtube.com/watch?v=JnKK1wsSjFQ",
@@ -259,7 +259,7 @@ app.controller('MainController', function ($scope, $rootScope, $state) {
         {
             name: "Ajin",
             img: 25,
-            views: 2300,
+            views: 5300,
             genre: 'Ecchi, Action',
             producer: 'TV Tokyo',
             video: "https://www.youtube.com/watch?v=dOqYibiWIec",
@@ -268,7 +268,7 @@ app.controller('MainController', function ($scope, $rootScope, $state) {
         {
             name: "Gurren Lagann",
             img: 26,
-            views: 2300,
+            views: 230,
             genre: 'Ecchi, Action',
             producer: 'TV Tokyo',
             video: "https://www.youtube.com/watch?v=aNQvLECht08",
@@ -277,7 +277,7 @@ app.controller('MainController', function ($scope, $rootScope, $state) {
         {
             name: "Danmachi",
             img: 27,
-            views: 2300,
+            views: 1300,
             genre: 'Ecchi, Action',
             producer: 'TV Tokyo',
             video: "https://www.youtube.com/watch?v=dPFq1-WGVM8",
@@ -286,7 +286,7 @@ app.controller('MainController', function ($scope, $rootScope, $state) {
         {
             name: "Gintama",
             img: 28,
-            views: 2300,
+            views: 2100,
             genre: 'Ecchi, Action',
             producer: 'TV Tokyo',
             video: "https://www.youtube.com/watch?v=EiU4RP84xWc",
@@ -316,6 +316,7 @@ app.controller('MainController', function ($scope, $rootScope, $state) {
 
 app.controller('ViewController', function ($scope, $rootScope, $state, youtubeEmbedUtils) {
     $scope.video = {};
+    $scope.episode = [2300,4500,1500,560,360,980,1400,630,890,750,742];
     function checkMovie(id) {
         angular.forEach($rootScope.data, function(val){
             // console.log(val.img);
