@@ -1,0 +1,103 @@
+<div id="newanime" class="main__citem animated fadeInDown">
+  <div class="row main__header">
+    <div class="col-md-9 col-sm-7 col-xs-5">
+      <h3>New Anime Releases For You</h3>
+    </div>
+    <div class="col-md-3 col-sm-5 col-xs-7 main__header--right"><a href="#">show all</a><a href="#"><i class="fa fa-chevron-left"></i></a><a href="#"><i class="fa fa-chevron-right"></i></a></div>
+  </div>
+  <div class="row main__citem-content">
+    <div class="col-lg-2 col-md-3 col-sm-4 col-xs-6" ng-repeat="photo in photos1" ui-sref="movie({id: photo.img})" ui-sref-active="active">
+      <div class="main__citem-item">
+        <div class="overlay"><img src="img/play.png" /></div><img ng-src="img/{{photo.img}}.jpg" alt="" class="img-responsive" />
+        <div class="main__citem-des">
+          <h2>{{photo.name}}</h2><span>#700</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="main__citem">
+  <div class="row main__header">
+    <div class="col-md-9 col-sm-7 col-xs-5">
+      <h3>You May Be Like This</h3>
+    </div>
+    <div class="col-md-3 col-sm-5 col-xs-7 main__header--right"><a href="#">show all</a><a href="#"><i class="fa fa-chevron-left"></i></a><a href="#"><i class="fa fa-chevron-right"></i></a></div>
+  </div>
+  <div class="row main__citem-content">
+    <div class="col-lg-2 col-md-3 col-sm-4 col-xs-6" ng-repeat="photo in photos2" ui-sref="movie({id: photo.img})" ui-sref-active="active">
+      <div class="main__citem-item">
+        <div class="overlay"><img src="img/play.png" /></div><img ng-src="img/{{photo.img}}.jpg" alt="" class="img-responsive" />
+        <div class="main__citem-des">
+          <h2>{{photo.name}}</h2><span>#320</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div id="trending" class="row">
+  <div class="main__ritem col-sm-12 col-md-6">
+    <div class="row main__header">
+      <div class="col-md-10 col-sm-7 col-xs-5">
+        <h3>Top View</h3>
+      </div>
+    </div>
+    <div class="row main__ritem-content">
+      <div class="col-md-12 col-sm-12 col-xs-12 hvr-wobble-skew" ng-repeat="photo in photos4 track by $index" ui-sref="movie({id: photo.img})" ui-sref-active="active">
+        <div class="row main__ritem-item">
+          <div class="col-md-1 col-sm-1 col-xs-1 main__ritem-numberic"><span>{{$index}}</span></div>
+          <div class="col-md-2 col-sm-2 col-xs-2 main__ritem-thumb"><img ng-src="img/{{photo.img}}.jpg" alt="" /></div>
+          <div class="col-md-5 col-sm-7 col-xs-5 main__ritem-title">
+            <h2>{{photo.name}}</h2><span>Movie</span>
+          </div>
+          <div class="col-md-4 col-sm-2 main__ritem-icon">
+            <button class="btn btn-nooutline-primary">PLAY</button>
+            <button class="btn btn-nooutline-primary">LIKE</button>
+          </div>
+        </div>
+      </div>
+      <div class="main__ritem-showall col-md-12 col-sm-12 col-xs-12"><span>show all </span><i class="fa fa-chevron-down"></i></div>
+    </div>
+  </div>
+  <div class="main__ritem col-sm-12 col-md-6">
+    <div class="row main__header">
+      <div class="col-md-10 col-sm-7 col-xs-5">
+        <h3>Top Like</h3>
+      </div>
+    </div>
+    <div class="row main__ritem-content">
+      <div class="col-md-12 col-sm-12 col-xs-12 hvr-wobble-skew" ng-repeat="photo in photos5 track by $index" ui-sref="movie({id: photo.img})" ui-sref-active="active">
+        <div class="row main__ritem-item">
+          <div class="col-md-1 col-sm-1 col-xs-1 main__ritem-numberic"><span>{{$index}}</span></div>
+          <div class="col-md-2 col-sm-2 col-xs-2 main__ritem-thumb"><img ng-src="img/{{photo.img}}.jpg" alt="" /></div>
+          <div class="col-md-5 col-sm-7 col-xs-5 main__ritem-title">
+            <h2>{{photo.name}}</h2><span>#250</span>
+          </div>
+          <div class="col-md-4 col-sm-2 main__ritem-icon">
+            <button class="btn btn-nooutline-primary">PLAY</button>
+            <button class="btn btn-nooutline-primary">LIKE</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="main__ritem-showall col-md-12 col-sm-12 col-xs-12"><span>show all </span><i class="fa fa-chevron-down"></i></div>
+    </div>
+  </div>
+</div>
+<div id="popular" class="main__citem">
+  <div class="row main__header">
+    <div class="col-md-9 col-sm-7 col-xs-5">
+      <h3>Popular Anime You May Like</h3>
+    </div>
+    <div class="col-md-3 col-sm-5 col-xs-7 main__header--right"><a href="#">show all</a><a href="#"><i class="fa fa-chevron-left"></i></a><a href="#"><i class="fa fa-chevron-right"></i></a></div>
+  </div>
+  <div class="row main__citem-content">
+    <div class="col-lg-2 col-md-3 col-sm-4 col-xs-6" ng-repeat="photo in photos3" ui-sref="movie({id: photo.img})" ui-sref-active="active">
+      <div class="main__citem-item">
+        <div class="overlay"><img src="img/play.png" /></div><img ng-src="img/{{photo.img}}.jpg" alt="" class="img-responsive" />
+        <div class="main__citem-des">
+          <h2>{{photo.name}}</h2><span>#532</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
