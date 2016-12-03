@@ -232,6 +232,7 @@ app.controller('MainController', function ($scope, $rootScope, $state) {
 
 app.controller('ViewController', function ($scope, $rootScope, $state) {
     $scope.video = {};
+    console.log($rootScope.data);
     function checkMovie(id) {
         angular.forEach($rootScope.data, function(val){
            if(val.img === id)
