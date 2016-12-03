@@ -94,11 +94,13 @@
                 <div class="main__watch-episode">
                     <ul>
                         <li class="hvr-bounce-to-right " ng-repeat="video in data">
-                            <div class="list-video clearfix">
-                                <img src="img/{{video.img}}.jpg" alt="" width="100%"/>
-                            </div>
-                            
-                            <div class="main__watch-suggest-episode"> <a href="">{{video.name}}</a><small>2,300 view</small></div>
+                            <a ui-sref="movie({id: video.img})" ui-sref-active="active">
+                                <div class="list-video clearfix">
+                                    <img src="img/{{video.img}}.jpg" alt="" width="100%"/>
+                                </div>
+                                
+                                <div class="main__watch-suggest-episode"> <a href="">{{video.name}}</a><small>2,200 view</small></div>
+                            </a>
                         </li>
                     </ul>
                 </div>
