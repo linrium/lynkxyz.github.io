@@ -1,611 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1"/>
-    <title>Hello world</title>
-    <!-- bootstrap-->
-    <link rel="stylesheet" href="components/bootstrap/dist/css/bootstrap.min.css"/>
-    <!-- font awesome-->
-    <link rel="stylesheet" href="components/components-font-awesome/css/font-awesome.min.css"/>
-    <!-- styles-->
-    <link rel="stylesheet" href="components/hover/css/hover-min.css"/>
-    <!-- styles-->
-    <link rel="stylesheet" href="css/animate.css"/>
-    <!-- styles-->
-    <link rel="stylesheet" href="css/main.css"/>
-    <link rel="apple-touch-icon" sizes="57x57" href="img/fav/apple-touch-icon-57x57.png"/>
-    <link rel="apple-touch-icon" sizes="60x60" href="img/fav/apple-touch-icon-60x60.png"/>
-    <link rel="apple-touch-icon" sizes="72x72" href="img/fav/apple-touch-icon-72x72.png"/>
-    <link rel="apple-touch-icon" sizes="76x76" href="img/fav/apple-touch-icon-76x76.png"/>
-    <link rel="apple-touch-icon" sizes="114x114" href="img/fav/apple-touch-icon-114x114.png"/>
-    <link rel="apple-touch-icon" sizes="120x120" href="img/fav/apple-touch-icon-120x120.png"/>
-    <link rel="apple-touch-icon" sizes="144x144" href="img/fav/apple-touch-icon-144x144.png"/>
-    <link rel="apple-touch-icon" sizes="152x152" href="img/fav/apple-touch-icon-152x152.png"/>
-    <link rel="apple-touch-icon" sizes="180x180" href="img/fav/apple-touch-icon-180x180.png"/>
-    <link rel="icon" type="image/png" href="img/fav/favicon-32x32.png" sizes="32x32"/>
-    <link rel="icon" type="image/png" href="img/fav/android-chrome-192x192.png" sizes="192x192"/>
-    <link rel="icon" type="image/png" href="img/fav/favicon-96x96.png" sizes="96x96"/>
-    <link rel="icon" type="image/png" href="img/fav/favicon-16x16.png" sizes="16x16"/>
-    <link rel="manifest" href="img/fav/manifest.json"/>
-    <link rel="mask-icon" href="img/fav/safari-pinned-tab.svg" color="#5bbad5"/>
-    <meta name="msapplication-TileColor" content="#da532c"/>
-    <meta name="msapplication-TileImage" content="img/fav/mstile-144x144.png"/>
-    <meta name="theme-color" content="#ffffff"/>
-  </head>
-  <body>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Hello world</title>
+  <!-- bootstrap-->
+  <link rel="stylesheet" href="components/bootstrap/dist/css/bootstrap.min.css" />
+  <!-- font awesome-->
+  <link rel="stylesheet" href="components/components-font-awesome/css/font-awesome.min.css" />
+  <!-- styles-->
+  <link rel="stylesheet" href="components/hover/css/hover-min.css" />
+  <!-- styles-->
+  <link rel="stylesheet" href="css/animate.css" />
+  <!-- styles-->
+  <link rel="stylesheet" href="css/main.css" />
+  <link rel="apple-touch-icon" sizes="57x57" href="img/fav/apple-touch-icon-57x57.png" />
+  <link rel="apple-touch-icon" sizes="60x60" href="img/fav/apple-touch-icon-60x60.png" />
+  <link rel="apple-touch-icon" sizes="72x72" href="img/fav/apple-touch-icon-72x72.png" />
+  <link rel="apple-touch-icon" sizes="76x76" href="img/fav/apple-touch-icon-76x76.png" />
+  <link rel="apple-touch-icon" sizes="114x114" href="img/fav/apple-touch-icon-114x114.png" />
+  <link rel="apple-touch-icon" sizes="120x120" href="img/fav/apple-touch-icon-120x120.png" />
+  <link rel="apple-touch-icon" sizes="144x144" href="img/fav/apple-touch-icon-144x144.png" />
+  <link rel="apple-touch-icon" sizes="152x152" href="img/fav/apple-touch-icon-152x152.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="img/fav/apple-touch-icon-180x180.png" />
+  <link rel="icon" type="image/png" href="img/fav/favicon-32x32.png" sizes="32x32" />
+  <link rel="icon" type="image/png" href="img/fav/android-chrome-192x192.png" sizes="192x192" />
+  <link rel="icon" type="image/png" href="img/fav/favicon-96x96.png" sizes="96x96" />
+  <link rel="icon" type="image/png" href="img/fav/favicon-16x16.png" sizes="16x16" />
+  <link rel="manifest" href="img/fav/manifest.json" />
+  <link rel="mask-icon" href="img/fav/safari-pinned-tab.svg" color="#5bbad5" />
+  <meta name="msapplication-TileColor" content="#da532c" />
+  <meta name="msapplication-TileImage" content="img/fav/mstile-144x144.png" />
+  <meta name="theme-color" content="#ffffff" />
+
+
+</head>
+
+<body>
+  <div id="app" ng-app="webmovie">
     <div id="webmovie" class="container-fluid">
-      <header id="home" class="row header">
+      <div ng-include="'app/views/webheader.html'"></div>
+      <div ng-include="'app/views/webnav.html'"></div>
+      <div class="main row" ng-controller="MainController">
         <div class="col-md-12">
           <div class="wrapper">
-            <div class="header__search row">
-              <div class="col-md-4 header__search--center">
-                <input type="search" placeholder="What are you looking for ?" id="search-bar" class="form-control"/>
-              </div>
-            </div>
-            <div class="header__album">
-              <h2>Dragon Ball Super</h2><small>new episode</small>
-              <div class="header__album--btn">
-                <button class="btn btn-outline-primary btn-active">play</button>
-                <button class="btn btn-outline-primary">follow</button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </header>
-      <div id="navmenu" class="row topmenu">
-        <div class="col-md-12">
-          <div class="wrapper">
-            <nav class="navbar topmenu__nav">
-              <button type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler hidden-lg-up"><i class="fa fa-bars"></i></button>
-              <div id="navbarResponsive" class="collapse navbar-toggleable-md">
-                <ul class="nav navbar-nav">
-                  <li class="nav-item active hvr-underline-from-left"><a href="#home" class="nav-link">Home <span class="sr-only">(current)</span></a></li>
-                  <li class="nav-item hvr-underline-from-left"><a href="#newanime" class="nav-link">New Anime</a></li>
-                  <li class="nav-item hvr-underline-from-left"><a href="#trending" class="nav-link">Trending</a></li>
-                  <li class="nav-item hvr-underline-from-left"><a href="#popular" class="nav-link">Popular</a></li>
-                </ul>
-              </div>
-            </nav>
+            <ui-view></ui-view>
           </div>
         </div>
       </div>
-      <div class="main row">
-        <div class="col-md-12">
-          <div class="wrapper">
-            <div id="newanime" class="main__citem">
-              <div class="row main__header">
-                      <div class="col-md-9 col-sm-7 col-xs-5">
-                        <h3>New Anime Releases For You</h3>
-                      </div>
-                      <div class="col-md-3 col-sm-5 col-xs-7 main__header--right"><a href="#">show all</a><a href="#"><i class="fa fa-chevron-left"></i></a><a href="#"><i class="fa fa-chevron-right"></i></a></div>
-              </div>
-              <div class="row main__citem-content">
-                      <div class="col-lg-2 col-md-3 col-sm-4 col-xs-6">
-                        <div class="main__citem-item">
-                          <div class="overlay"><img src="img/play.png"/></div><img src="img/1.jpg" alt="" class="img-responsive"/>
-                          <div class="main__citem-des">
-                            <h2>One Piece</h2><span>#700</span>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="col-lg-2 col-md-3 col-sm-4 col-xs-6">
-                        <div class="main__citem-item">
-                          <div class="overlay"><img src="img/play.png"/></div><img src="img/2.jpg" alt="" class="img-responsive"/>
-                          <div class="main__citem-des">
-                            <h2>Naruto</h2><span>#530</span>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="col-lg-2 col-md-3 col-sm-4 col-xs-6">
-                        <div class="main__citem-item">
-                          <div class="overlay"><img src="img/play.png"/></div><img src="img/3.jpg" alt="" class="img-responsive"/>
-                          <div class="main__citem-des">
-                            <h2>Fairy Tail</h2><span>#30</span>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="col-lg-2 col-md-3 col-sm-4 col-xs-6">
-                        <div class="main__citem-item">
-                          <div class="overlay"><img src="img/play.png"/></div><img src="img/4.jpg" alt="" class="img-responsive"/>
-                          <div class="main__citem-des">
-                            <h2>Bleach</h2><span>#530</span>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="col-lg-2 col-md-3 col-sm-4 col-xs-6">
-                        <div class="main__citem-item">
-                          <div class="overlay"><img src="img/play.png"/></div><img src="img/5.jpg" alt="" class="img-responsive"/>
-                          <div class="main__citem-des">
-                            <h2>One Puch Man</h2><span>#35</span>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="col-lg-2 col-md-3 col-sm-4 col-xs-6">
-                        <div class="main__citem-item">
-                          <div class="overlay"><img src="img/play.png"/></div><img src="img/6.jpg" alt="" class="img-responsive"/>
-                          <div class="main__citem-des">
-                            <h2>Dragon Ball Super</h2><span>Movie</span>
-                          </div>
-                        </div>
-                      </div>
-              </div>
-            </div>
-            <div class="main__citem">
-              <div class="row main__header">
-                      <div class="col-md-9 col-sm-7 col-xs-5">
-                        <h3>You May Be Like This</h3>
-                      </div>
-                      <div class="col-md-3 col-sm-5 col-xs-7 main__header--right"><a href="#">show all</a><a href="#"><i class="fa fa-chevron-left"></i></a><a href="#"><i class="fa fa-chevron-right"></i></a></div>
-              </div>
-              <div class="row main__citem-content">
-                      <div class="col-lg-2 col-md-3 col-sm-4 col-xs-6">
-                        <div class="main__citem-item">
-                          <div class="overlay"><img src="img/play.png"/></div><img src="img/7.jpg" alt="" class="img-responsive"/>
-                          <div class="main__citem-des">
-                            <h2>Pokemon</h2><span>#320</span>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="col-lg-2 col-md-3 col-sm-4 col-xs-6">
-                        <div class="main__citem-item">
-                          <div class="overlay"><img src="img/play.png"/></div><img src="img/8.jpg" alt="" class="img-responsive"/>
-                          <div class="main__citem-des">
-                            <h2>Black Rock Shooter</h2><span>#125</span>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="col-lg-2 col-md-3 col-sm-4 col-xs-6">
-                        <div class="main__citem-item">
-                          <div class="overlay"><img src="img/play.png"/></div><img src="img/9.jpg" alt="" class="img-responsive"/>
-                          <div class="main__citem-des">
-                            <h2>Sword Art Online</h2><span>#56</span>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="col-lg-2 col-md-3 col-sm-4 col-xs-6">
-                        <div class="main__citem-item">
-                          <div class="overlay"><img src="img/play.png"/></div><img src="img/10.jpg" alt="" class="img-responsive"/>
-                          <div class="main__citem-des">
-                            <h2>5cm/s</h2><span>#75</span>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="col-lg-2 col-md-3 col-sm-4 col-xs-6">
-                        <div class="main__citem-item">
-                          <div class="overlay"><img src="img/play.png"/></div><img src="img/11.jpg" alt="" class="img-responsive"/>
-                          <div class="main__citem-des">
-                            <h2>Date A Live</h2><span>#532</span>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="col-lg-2 col-md-3 col-sm-4 col-xs-6">
-                        <div class="main__citem-item">
-                          <div class="overlay"><img src="img/play.png"/></div><img src="img/12.jpg" alt="" class="img-responsive"/>
-                          <div class="main__citem-des">
-                            <h2>Attack on the Titan</h2><span>#325</span>
-                          </div>
-                        </div>
-                      </div>
-              </div>
-            </div>
-            <div id="trending" class="row">
-              <div class="main__ritem col-sm-12 col-md-6">
-                <div class="row main__header">
-                  <div class="col-md-10 col-sm-7 col-xs-5">
-                    <h3>Top View</h3>
-                  </div>
-                </div>
-                <div class="row main__ritem-content">
-                        <div class="col-md-12 col-sm-12 col-xs-12 hvr-wobble-skew">
-                          <div class="row main__ritem-item">
-                            <div class="col-md-1 col-sm-1 col-xs-1 main__ritem-numberic"><span>01</span></div>
-                            <div class="col-md-2 col-sm-2 col-xs-2 main__ritem-thumb"><img src="img/19.jpg" alt=""/></div>
-                            <div class="col-md-5 col-sm-7 col-xs-5 main__ritem-title">
-                              <h2>Stand By Me</h2><span>Movie</span>
-                            </div>
-                            <div class="col-md-4 col-sm-2 main__ritem-icon">
-                              <button class="btn btn-nooutline-primary">PLAY</button>
-                              <button class="btn btn-nooutline-primary">LIKE</button>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="col-md-12 col-sm-12 col-xs-12 hvr-wobble-skew">
-                          <div class="row main__ritem-item">
-                            <div class="col-md-1 col-sm-1 col-xs-1 main__ritem-numberic"><span>02</span></div>
-                            <div class="col-md-2 col-sm-2 col-xs-2 main__ritem-thumb"><img src="img/20.jpg" alt=""/></div>
-                            <div class="col-md-5 col-sm-7 col-xs-5 main__ritem-title">
-                              <h2>Adventure Time</h2><span>#250</span>
-                            </div>
-                            <div class="col-md-4 col-sm-2 main__ritem-icon">
-                              <button class="btn btn-nooutline-primary">PLAY</button>
-                              <button class="btn btn-nooutline-primary">LIKE</button>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="col-md-12 col-sm-12 col-xs-12 hvr-wobble-skew">
-                          <div class="row main__ritem-item">
-                            <div class="col-md-1 col-sm-1 col-xs-1 main__ritem-numberic"><span>03</span></div>
-                            <div class="col-md-2 col-sm-2 col-xs-2 main__ritem-thumb"><img src="img/21.jpg" alt=""/></div>
-                            <div class="col-md-5 col-sm-7 col-xs-5 main__ritem-title">
-                              <h2>Inu Yasha</h2><span>#250</span>
-                            </div>
-                            <div class="col-md-4 col-sm-2 main__ritem-icon">
-                              <button class="btn btn-nooutline-primary">PLAY</button>
-                              <button class="btn btn-nooutline-primary">LIKE</button>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="col-md-12 col-sm-12 col-xs-12 hvr-wobble-skew">
-                          <div class="row main__ritem-item">
-                            <div class="col-md-1 col-sm-1 col-xs-1 main__ritem-numberic"><span>04</span></div>
-                            <div class="col-md-2 col-sm-2 col-xs-2 main__ritem-thumb"><img src="img/22.jpg" alt=""/></div>
-                            <div class="col-md-5 col-sm-7 col-xs-5 main__ritem-title">
-                              <h2>Masou Gakuen HxH</h2><span>#250</span>
-                            </div>
-                            <div class="col-md-4 col-sm-2 main__ritem-icon">
-                              <button class="btn btn-nooutline-primary">PLAY</button>
-                              <button class="btn btn-nooutline-primary">LIKE</button>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="col-md-12 col-sm-12 col-xs-12 hvr-wobble-skew">
-                          <div class="row main__ritem-item">
-                            <div class="col-md-1 col-sm-1 col-xs-1 main__ritem-numberic"><span>05</span></div>
-                            <div class="col-md-2 col-sm-2 col-xs-2 main__ritem-thumb"><img src="img/23.jpg" alt=""/></div>
-                            <div class="col-md-5 col-sm-7 col-xs-5 main__ritem-title">
-                              <h2>Overlord</h2><span>#250</span>
-                            </div>
-                            <div class="col-md-4 col-sm-2 main__ritem-icon">
-                              <button class="btn btn-nooutline-primary">PLAY</button>
-                              <button class="btn btn-nooutline-primary">LIKE</button>
-                            </div>
-                          </div>
-                        </div>
-                  <div class="main__ritem-showall col-md-12 col-sm-12 col-xs-12"><span>show all </span><i class="fa fa-chevron-down"></i></div>
-                </div>
-              </div>
-              <div class="main__ritem col-sm-12 col-md-6">
-                <div class="row main__header">
-                  <div class="col-md-10 col-sm-7 col-xs-5">
-                    <h3>Top Like</h3>
-                  </div>
-                </div>
-                <div class="row main__ritem-content">
-                        <div class="col-md-12 col-sm-12 col-xs-12 hvr-wobble-skew">
-                          <div class="row main__ritem-item">
-                            <div class="col-md-1 col-sm-1 col-xs-1 main__ritem-numberic"><span>01</span></div>
-                            <div class="col-md-2 col-sm-2 col-xs-2 main__ritem-thumb"><img src="img/24.jpg" alt=""/></div>
-                            <div class="col-md-5 col-sm-7 col-xs-5 main__ritem-title">
-                              <h2>God Eater</h2><span>#250</span>
-                            </div>
-                            <div class="col-md-4 col-sm-2 main__ritem-icon">
-                              <button class="btn btn-nooutline-primary">PLAY</button>
-                              <button class="btn btn-nooutline-primary">LIKE</button>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="col-md-12 col-sm-12 col-xs-12 hvr-wobble-skew">
-                          <div class="row main__ritem-item">
-                            <div class="col-md-1 col-sm-1 col-xs-1 main__ritem-numberic"><span>02</span></div>
-                            <div class="col-md-2 col-sm-2 col-xs-2 main__ritem-thumb"><img src="img/25.jpg" alt=""/></div>
-                            <div class="col-md-5 col-sm-7 col-xs-5 main__ritem-title">
-                              <h2>Ajin</h2><span>#250</span>
-                            </div>
-                            <div class="col-md-4 col-sm-2 main__ritem-icon">
-                              <button class="btn btn-nooutline-primary">PLAY</button>
-                              <button class="btn btn-nooutline-primary">LIKE</button>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="col-md-12 col-sm-12 col-xs-12 hvr-wobble-skew">
-                          <div class="row main__ritem-item">
-                            <div class="col-md-1 col-sm-1 col-xs-1 main__ritem-numberic"><span>03</span></div>
-                            <div class="col-md-2 col-sm-2 col-xs-2 main__ritem-thumb"><img src="img/26.jpg" alt=""/></div>
-                            <div class="col-md-5 col-sm-7 col-xs-5 main__ritem-title">
-                              <h2>Gurren Lagann</h2><span>#250</span>
-                            </div>
-                            <div class="col-md-4 col-sm-2 main__ritem-icon">
-                              <button class="btn btn-nooutline-primary">PLAY</button>
-                              <button class="btn btn-nooutline-primary">LIKE</button>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="col-md-12 col-sm-12 col-xs-12 hvr-wobble-skew">
-                          <div class="row main__ritem-item">
-                            <div class="col-md-1 col-sm-1 col-xs-1 main__ritem-numberic"><span>04</span></div>
-                            <div class="col-md-2 col-sm-2 col-xs-2 main__ritem-thumb"><img src="img/27.jpg" alt=""/></div>
-                            <div class="col-md-5 col-sm-7 col-xs-5 main__ritem-title">
-                              <h2>Danmachi</h2><span>#250</span>
-                            </div>
-                            <div class="col-md-4 col-sm-2 main__ritem-icon">
-                              <button class="btn btn-nooutline-primary">PLAY</button>
-                              <button class="btn btn-nooutline-primary">LIKE</button>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="col-md-12 col-sm-12 col-xs-12 hvr-wobble-skew">
-                          <div class="row main__ritem-item">
-                            <div class="col-md-1 col-sm-1 col-xs-1 main__ritem-numberic"><span>05</span></div>
-                            <div class="col-md-2 col-sm-2 col-xs-2 main__ritem-thumb"><img src="img/28.jpg" alt=""/></div>
-                            <div class="col-md-5 col-sm-7 col-xs-5 main__ritem-title">
-                              <h2>Gintama</h2><span>#250</span>
-                            </div>
-                            <div class="col-md-4 col-sm-2 main__ritem-icon">
-                              <button class="btn btn-nooutline-primary">PLAY</button>
-                              <button class="btn btn-nooutline-primary">LIKE</button>
-                            </div>
-                          </div>
-                        </div>
-                  <div class="main__ritem-showall col-md-12 col-sm-12 col-xs-12"><span>show all </span><i class="fa fa-chevron-down"></i></div>
-                </div>
-              </div>
-            </div>
-            <div id="popular" class="main__citem">
-              <div class="row main__header">
-                      <div class="col-md-9 col-sm-7 col-xs-5">
-                        <h3>Popular Anime You May Like</h3>
-                      </div>
-                      <div class="col-md-3 col-sm-5 col-xs-7 main__header--right"><a href="#">show all</a><a href="#"><i class="fa fa-chevron-left"></i></a><a href="#"><i class="fa fa-chevron-right"></i></a></div>
-              </div>
-              <div class="row main__citem-content">
-                      <div class="col-lg-2 col-md-3 col-sm-4 col-xs-6">
-                        <div class="main__citem-item">
-                          <div class="overlay"><img src="img/play.png"/></div><img src="img/13.jpg" alt="" class="img-responsive"/>
-                          <div class="main__citem-des">
-                            <h2>Bikini Warriors</h2><span>#532</span>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="col-lg-2 col-md-3 col-sm-4 col-xs-6">
-                        <div class="main__citem-item">
-                          <div class="overlay"><img src="img/play.png"/></div><img src="img/14.jpg" alt="" class="img-responsive"/>
-                          <div class="main__citem-des">
-                            <h2>Tokyo Ghoul</h2><span>#235</span>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="col-lg-2 col-md-3 col-sm-4 col-xs-6">
-                        <div class="main__citem-item">
-                          <div class="overlay"><img src="img/play.png"/></div><img src="img/15.jpg" alt="" class="img-responsive"/>
-                          <div class="main__citem-des">
-                            <h2>Fairy Tail</h2><span>#320</span>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="col-lg-2 col-md-3 col-sm-4 col-xs-6">
-                        <div class="main__citem-item">
-                          <div class="overlay"><img src="img/play.png"/></div><img src="img/16.jpg" alt="" class="img-responsive"/>
-                          <div class="main__citem-des">
-                            <h2>Hunter x Hunter</h2><span>#23</span>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="col-lg-2 col-md-3 col-sm-4 col-xs-6">
-                        <div class="main__citem-item">
-                          <div class="overlay"><img src="img/play.png"/></div><img src="img/17.jpg" alt="" class="img-responsive"/>
-                          <div class="main__citem-des">
-                            <h2>Digimon</h2><span>#50</span>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="col-lg-2 col-md-3 col-sm-4 col-xs-6">
-                        <div class="main__citem-item">
-                          <div class="overlay"><img src="img/play.png"/></div><img src="img/18.jpg" alt="" class="img-responsive"/>
-                          <div class="main__citem-des">
-                            <h2>Gumball</h2><span>#56</span>
-                          </div>
-                        </div>
-                      </div>
-              </div>
-            </div>
-            <div class="main__watch">
-              <div class="row main__watch-header">
-                <div class="col-md-8 col-sm-12 col-xs-12">
-                  <div class="main__watch-video">
-                    <iframe width="100%" height="500" src="https://www.youtube.com/embed/1vhL4mi28n8" frameborder="0" allowfullscreen=""></iframe>
-                  </div>
-                </div>
-                <div class="col-md-4 col-sm-12 col-xs-12">
-                  <div class="main__watch-episode">
-                    <ul>
-                      <li class="hvr-bounce-to-right"><img src="http://placehold.it/162x82" alt=""/>
-                        <div class="main__watch-suggest-episode"> <a href="">Episode 1</a><small>2,300 view</small></div>
-                      </li>
-                      <li class="hvr-bounce-to-right"><img src="http://placehold.it/162x82" alt=""/>
-                        <div class="main__watch-suggest-episode"> <a href="">Episode 2</a><small>2,300 view</small></div>
-                      </li>
-                      <li class="hvr-bounce-to-right"><img src="http://placehold.it/162x82" alt=""/>
-                        <div class="main__watch-suggest-episode"> <a href="">Episode 3</a><small>2,300 view</small></div>
-                      </li>
-                      <li class="hvr-bounce-to-right"><img src="http://placehold.it/162x82" alt=""/>
-                        <div class="main__watch-suggest-episode"> <a href="">Episode 4</a><small>2,300 view</small></div>
-                      </li>
-                      <li class="hvr-bounce-to-right"><img src="http://placehold.it/162x82" alt=""/>
-                        <div class="main__watch-suggest-episode"> <a href="">Episode 5</a><small>2,300 view</small></div>
-                      </li>
-                      <li class="hvr-bounce-to-right"><img src="http://placehold.it/162x82" alt=""/>
-                        <div class="main__watch-suggest-episode"> <a href="">Episode 6</a><small>2,300 view</small></div>
-                      </li>
-                      <li class="hvr-bounce-to-right"><img src="http://placehold.it/162x82" alt=""/>
-                        <div class="main__watch-suggest-episode"> <a href="">Episode 7</a><small>2,300 view</small></div>
-                      </li>
-                      <li class="hvr-bounce-to-right"><img src="http://placehold.it/162x82" alt=""/>
-                        <div class="main__watch-suggest-episode"> <a href="">Episode 8</a><small>2,300 view</small></div>
-                      </li>
-                      <li class="hvr-bounce-to-right"><img src="http://placehold.it/162x82" alt=""/>
-                        <div class="main__watch-suggest-episode"> <a href="">Episode 9</a><small>2,300 view</small></div>
-                      </li>
-                      <li class="hvr-bounce-to-right"><img src="http://placehold.it/162x82" alt=""/>
-                        <div class="main__watch-suggest-episode"> <a href="">Episode 10</a><small>2,300 view</small></div>
-                      </li>
-                      <li class="hvr-bounce-to-right"><img src="http://placehold.it/162x82" alt=""/>
-                        <div class="main__watch-suggest-episode"> <a href="">Episode 11</a><small>2,300 view</small></div>
-                      </li>
-                      <li class="hvr-bounce-to-right"><img src="http://placehold.it/162x82" alt=""/>
-                        <div class="main__watch-suggest-episode"> <a href="">Episode 12</a><small>2,300 view</small></div>
-                      </li>
-                      <li class="hvr-bounce-to-right"><img src="http://placehold.it/162x82" alt=""/>
-                        <div class="main__watch-suggest-episode"> <a href="">Episode 13</a><small>2,300 view</small></div>
-                      </li>
-                      <li class="hvr-bounce-to-right"><img src="http://placehold.it/162x82" alt=""/>
-                        <div class="main__watch-suggest-episode"> <a href="">Episode 14</a><small>2,300 view</small></div>
-                      </li>
-                      <li class="hvr-bounce-to-right"><img src="http://placehold.it/162x82" alt=""/>
-                        <div class="main__watch-suggest-episode"> <a href="">Episode 15</a><small>2,300 view</small></div>
-                      </li>
-                      <li class="hvr-bounce-to-right"><img src="http://placehold.it/162x82" alt=""/>
-                        <div class="main__watch-suggest-episode"> <a href="">Episode 16</a><small>2,300 view</small></div>
-                      </li>
-                      <li class="hvr-bounce-to-right"><img src="http://placehold.it/162x82" alt=""/>
-                        <div class="main__watch-suggest-episode"> <a href="">Episode 17</a><small>2,300 view</small></div>
-                      </li>
-                      <li class="hvr-bounce-to-right"><img src="http://placehold.it/162x82" alt=""/>
-                        <div class="main__watch-suggest-episode"> <a href="">Episode 18</a><small>2,300 view</small></div>
-                      </li>
-                      <li class="hvr-bounce-to-right"><img src="http://placehold.it/162x82" alt=""/>
-                        <div class="main__watch-suggest-episode"> <a href="">Episode 19</a><small>2,300 view</small></div>
-                      </li>
-                      <li class="hvr-bounce-to-right"><img src="http://placehold.it/162x82" alt=""/>
-                        <div class="main__watch-suggest-episode"> <a href="">Episode 20</a><small>2,300 view</small></div>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-              <div class="row main__watch-content">
-                <div class="col-md-8">
-                  <div class="main__watch-info">
-                    <h1>Naruto Shippuuden</h1>
-                    <div class="row">
-                      <div class="col-md-8"><span id="follow"><i class="fa fa-plus"></i> FOLLOW</span></div>
-                      <div class="col-md-4"><span id="views" class="hvr-underline-from-left"><i class="fa fa-heart"></i> 3,200 views</span></div>
-                    </div><span><i class="fa fa-list"></i> Action, Ecchi, School</span><span><i class="fa fa-building"></i> TV Tokyo</span>
-                    <div class="description">Bộ anime hài hước kể về cuộc sống trong tù, cũng như những pha vượt ngục của bốn anh chàng tù nhân phòng số 13 trong nhà ngục an ninh nhất thế giới - Ngục Nanba. Bốn con người với cá tính và tài năng riêng biệt đã là một đội kết hợp hết sức ăn ý, vượt thành công vô | số nhà tù, nhưng đến nhà tù Nanba, họ lại gặp trở ngại lớn, chính là Giám sát Hajime. Liệu họ có thể thoát khỏi nhà tù này và đạt được ước mơ của mình không?</div>
-                  </div>
-                  <div class="main__watch-comments">
-                    <div data-href="https://developers.facebook.com/docs/plugins/comments#configurator" data-width="100%" data-numposts="5" class="fb-comments"></div>
-                  </div>
-                </div>
-                <div class="col-md-4">
-                  <div class="main__watch-suggest">
-                    <div class="main__watch-episode">
-                      <ul>
-                        <li class="hvr-bounce-to-right"><img src="http://placehold.it/162x82" alt=""/>
-                          <div class="main__watch-suggest-episode"> <a href="">Episode 1</a><small>2,300 view</small></div>
-                        </li>
-                        <li class="hvr-bounce-to-right"><img src="http://placehold.it/162x82" alt=""/>
-                          <div class="main__watch-suggest-episode"> <a href="">Episode 2</a><small>2,300 view</small></div>
-                        </li>
-                        <li class="hvr-bounce-to-right"><img src="http://placehold.it/162x82" alt=""/>
-                          <div class="main__watch-suggest-episode"> <a href="">Episode 3</a><small>2,300 view</small></div>
-                        </li>
-                        <li class="hvr-bounce-to-right"><img src="http://placehold.it/162x82" alt=""/>
-                          <div class="main__watch-suggest-episode"> <a href="">Episode 4</a><small>2,300 view</small></div>
-                        </li>
-                        <li class="hvr-bounce-to-right"><img src="http://placehold.it/162x82" alt=""/>
-                          <div class="main__watch-suggest-episode"> <a href="">Episode 5</a><small>2,300 view</small></div>
-                        </li>
-                        <li class="hvr-bounce-to-right"><img src="http://placehold.it/162x82" alt=""/>
-                          <div class="main__watch-suggest-episode"> <a href="">Episode 6</a><small>2,300 view</small></div>
-                        </li>
-                        <li class="hvr-bounce-to-right"><img src="http://placehold.it/162x82" alt=""/>
-                          <div class="main__watch-suggest-episode"> <a href="">Episode 7</a><small>2,300 view</small></div>
-                        </li>
-                        <li class="hvr-bounce-to-right"><img src="http://placehold.it/162x82" alt=""/>
-                          <div class="main__watch-suggest-episode"> <a href="">Episode 8</a><small>2,300 view</small></div>
-                        </li>
-                        <li class="hvr-bounce-to-right"><img src="http://placehold.it/162x82" alt=""/>
-                          <div class="main__watch-suggest-episode"> <a href="">Episode 9</a><small>2,300 view</small></div>
-                        </li>
-                        <li class="hvr-bounce-to-right"><img src="http://placehold.it/162x82" alt=""/>
-                          <div class="main__watch-suggest-episode"> <a href="">Episode 10</a><small>2,300 view</small></div>
-                        </li>
-                        <li class="hvr-bounce-to-right"><img src="http://placehold.it/162x82" alt=""/>
-                          <div class="main__watch-suggest-episode"> <a href="">Episode 11</a><small>2,300 view</small></div>
-                        </li>
-                        <li class="hvr-bounce-to-right"><img src="http://placehold.it/162x82" alt=""/>
-                          <div class="main__watch-suggest-episode"> <a href="">Episode 12</a><small>2,300 view</small></div>
-                        </li>
-                        <li class="hvr-bounce-to-right"><img src="http://placehold.it/162x82" alt=""/>
-                          <div class="main__watch-suggest-episode"> <a href="">Episode 13</a><small>2,300 view</small></div>
-                        </li>
-                        <li class="hvr-bounce-to-right"><img src="http://placehold.it/162x82" alt=""/>
-                          <div class="main__watch-suggest-episode"> <a href="">Episode 14</a><small>2,300 view</small></div>
-                        </li>
-                        <li class="hvr-bounce-to-right"><img src="http://placehold.it/162x82" alt=""/>
-                          <div class="main__watch-suggest-episode"> <a href="">Episode 15</a><small>2,300 view</small></div>
-                        </li>
-                        <li class="hvr-bounce-to-right"><img src="http://placehold.it/162x82" alt=""/>
-                          <div class="main__watch-suggest-episode"> <a href="">Episode 16</a><small>2,300 view</small></div>
-                        </li>
-                        <li class="hvr-bounce-to-right"><img src="http://placehold.it/162x82" alt=""/>
-                          <div class="main__watch-suggest-episode"> <a href="">Episode 17</a><small>2,300 view</small></div>
-                        </li>
-                        <li class="hvr-bounce-to-right"><img src="http://placehold.it/162x82" alt=""/>
-                          <div class="main__watch-suggest-episode"> <a href="">Episode 18</a><small>2,300 view</small></div>
-                        </li>
-                        <li class="hvr-bounce-to-right"><img src="http://placehold.it/162x82" alt=""/>
-                          <div class="main__watch-suggest-episode"> <a href="">Episode 19</a><small>2,300 view</small></div>
-                        </li>
-                        <li class="hvr-bounce-to-right"><img src="http://placehold.it/162x82" alt=""/>
-                          <div class="main__watch-suggest-episode"> <a href="">Episode 20</a><small>2,300 view</small></div>
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <footer class="footer row">
-        <div class="col-md-12">
-          <div class="wrapper">
-            <div class="row">
-              <div class="col-md-3 col-sm-3 col-xs-6 footer__menu-col3">
-                <ul>
-                  <li><a href="">Anime</a></li>
-                  <li><a href="">Genre</a></li>
-                  <li><a href="">Year</a></li>
-                  <li><a href="">Season</a></li>
-                  <li><a href="">Archive</a></li>
-                </ul>
-              </div>
-              <div class="col-md-3 col-sm-3 col-xs-6 footer__menu-col3">
-                <ul>
-                  <li><a href="">Anime47</a></li>
-                  <li><a href="">Animetvn</a></li>
-                  <li><a href="">Phimmoi</a></li>
-                  <li><a href="">VietDesigner</a></li>
-                  <li><a href="">TechTalk</a></li>
-                </ul>
-              </div>
-              <div class="col-md-6 col-sm-6 footer__menu-col6"><img src="img/footer5.png" alt=""/></div>
-            </div>
-          </div>
-          <div class="row footer__coypright">
-            <div class="col-md-5 col-sm-5 col-xs-12">&copy; Copyright 2016 by linh Inc.</div>
-            <div class="col-md-2 col-sm-2 col-xs-12"><a href="">Term of Use</a></div>
-            <div class="col-md-2 col-sm-2 col-xs-12"><a href="">Privacy Policy</a></div>
-            <div class="col-md-3 col-sm-3 col-xs-12"><a href="">Design by linh Inc.</a></div>
-          </div>
-        </div>
-      </footer>
+      <div ng-include="'app/views/webfooter.html'"></div>
     </div>
-    <!-- jQuery-->
-    <script src="components/jquery/dist/jquery.min.js"></script>
-    <!-- jQuery-->
-    <script src="components/Flowtype.js/flowtype.js"></script>
-    <!-- tether-->
-    <script src="components/tether/dist/js/tether.min.js"></script>
-    <!-- bootstrap-->
-    <script src="components/bootstrap/dist/js/bootstrap.min.js"></script>
-    <!-- My script-->
-    <script src="js/functions.js"></script>
-    <div id="fb-root"></div>
-    <script>
+  </div>
+  <!-- jQuery-->
+  <script src="components/jquery/dist/jquery.min.js"></script>
+  <!-- jQuery-->
+  <script src="components/Flowtype.js/flowtype.js"></script>
+  <!-- tether-->
+  <script src="components/tether/dist/js/tether.min.js"></script>
+  <!-- bootstrap-->
+  <script src="components/bootstrap/dist/js/bootstrap.min.js"></script>
+
+  <div id="fb-root"></div>
+  <!--<script>
       (function(d, s, id) {
       var js, fjs = d.getElementsByTagName(s)[0];
       if (d.getElementById(id)) return;
@@ -613,6 +70,16 @@
       js.src = "//connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v2.8";
       fjs.parentNode.insertBefore(js, fjs);
       }(document, 'script', 'facebook-jssdk'));
-    </script>
-  </body>
+    </script>-->
+
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.3.2/angular-ui-router.min.js"></script>
+  <script src="data/data.js"></script>
+  <script src="app/app.js"></script>
+
+  <!-- My script-->
+  <script src="js/functions.js"></script>
+
+</body>
+
 </html>

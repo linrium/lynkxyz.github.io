@@ -1,17 +1,4 @@
 $(document).ready(() => {
-
-    // scroll fixed menu
-    let nav = $('#navmenu');
-    $(document).scroll(function (event) {
-        if ($(this).scrollTop() >= 400) {
-            nav.addClass('fix-nav');
-            $('#search-bar').addClass('fix-search');
-        } else {
-            nav.removeClass('fix-nav');
-            $('#search-bar').removeClass('fix-search');
-        }
-    });
-
     //flowtype
     $('.main__ritem-header h3').flowtype({
         minimum: 500,
