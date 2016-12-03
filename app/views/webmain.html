@@ -24,7 +24,7 @@
     <div class="col-md-3 col-sm-5 col-xs-7 main__header--right"><a href="#">show all</a><a href="#"><i class="fa fa-chevron-left"></i></a><a href="#"><i class="fa fa-chevron-right"></i></a></div>
   </div>
   <div class="row main__citem-content">
-    <div class="col-lg-2 col-md-3 col-sm-4 col-xs-6" ng-repeat="photo in photos2">
+    <div class="col-lg-2 col-md-3 col-sm-4 col-xs-6" ng-repeat="photo in photos2" ui-sref="movie({id: photo.img})" ui-sref-active="active">
       <div class="main__citem-item">
         <div class="overlay"><img src="img/play.png" /></div><img ng-src="img/{{photo.img}}.jpg" alt="" class="img-responsive" />
         <div class="main__citem-des">
@@ -42,7 +42,7 @@
       </div>
     </div>
     <div class="row main__ritem-content">
-      <div class="col-md-12 col-sm-12 col-xs-12 hvr-wobble-skew" ng-repeat="photo in photos4 track by $index">
+      <div class="col-md-12 col-sm-12 col-xs-12 hvr-wobble-skew" ng-repeat="photo in photos4 track by $index" ui-sref="movie({id: photo.img})" ui-sref-active="active">
         <div class="row main__ritem-item">
           <div class="col-md-1 col-sm-1 col-xs-1 main__ritem-numberic"><span>{{$index}}</span></div>
           <div class="col-md-2 col-sm-2 col-xs-2 main__ritem-thumb"><img ng-src="img/{{photo.img}}.jpg" alt="" /></div>
@@ -65,7 +65,7 @@
       </div>
     </div>
     <div class="row main__ritem-content">
-      <div class="col-md-12 col-sm-12 col-xs-12 hvr-wobble-skew" ng-repeat="photo in photos5 track by $index">
+      <div class="col-md-12 col-sm-12 col-xs-12 hvr-wobble-skew" ng-repeat="photo in photos5 track by $index" ui-sref="movie({id: photo.img})" ui-sref-active="active">
         <div class="row main__ritem-item">
           <div class="col-md-1 col-sm-1 col-xs-1 main__ritem-numberic"><span>{{$index}}</span></div>
           <div class="col-md-2 col-sm-2 col-xs-2 main__ritem-thumb"><img ng-src="img/{{photo.img}}.jpg" alt="" /></div>
@@ -91,7 +91,7 @@
     <div class="col-md-3 col-sm-5 col-xs-7 main__header--right"><a href="#">show all</a><a href="#"><i class="fa fa-chevron-left"></i></a><a href="#"><i class="fa fa-chevron-right"></i></a></div>
   </div>
   <div class="row main__citem-content">
-    <div class="col-lg-2 col-md-3 col-sm-4 col-xs-6" ng-repeat="photo in photos3">
+    <div class="col-lg-2 col-md-3 col-sm-4 col-xs-6" ng-repeat="photo in photos3" ui-sref="movie({id: photo.img})" ui-sref-active="active">
       <div class="main__citem-item">
         <div class="overlay"><img src="img/play.png" /></div><img ng-src="img/{{photo.img}}.jpg" alt="" class="img-responsive" />
         <div class="main__citem-des">
