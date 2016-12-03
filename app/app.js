@@ -7,7 +7,7 @@ app.config(function ($stateProvider) {
         templateUrl: 'app/views/webmain.html'
     }
 
-    var aboutState = {
+    var movieState = {
         name: 'movie',
         url: '/movie/:id',
         templateUrl: 'app/views/webview.html'
@@ -18,10 +18,17 @@ app.config(function ($stateProvider) {
         url: '/lab',
         templateUrl: 'app/views/weblab.html'
     }
+    
+    var aboutState = {
+        name: 'lab',
+        url: '/lab',
+        templateUrl: 'app/views/weblab.html'
+    }
 
     $stateProvider.state(homeState);
-    $stateProvider.state(aboutState);
+    $stateProvider.state(movieState);
     $stateProvider.state(labState);
+    $stateProvider.state(aboutState);
 });
 
 app.controller('NavController', function ($scope, $location, $anchorScroll) {
