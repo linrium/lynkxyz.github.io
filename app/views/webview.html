@@ -93,65 +93,12 @@
             <div class="main__watch-suggest">
                 <div class="main__watch-episode">
                     <ul>
-                        <li class="hvr-bounce-to-right"><img src="http://placehold.it/162x82" alt="" />
-                            <div class="main__watch-suggest-episode"> <a href="">Episode 1</a><small>2,300 view</small></div>
-                        </li>
-                        <li class="hvr-bounce-to-right"><img src="http://placehold.it/162x82" alt="" />
-                            <div class="main__watch-suggest-episode"> <a href="">Episode 2</a><small>2,300 view</small></div>
-                        </li>
-                        <li class="hvr-bounce-to-right"><img src="http://placehold.it/162x82" alt="" />
-                            <div class="main__watch-suggest-episode"> <a href="">Episode 3</a><small>2,300 view</small></div>
-                        </li>
-                        <li class="hvr-bounce-to-right"><img src="http://placehold.it/162x82" alt="" />
-                            <div class="main__watch-suggest-episode"> <a href="">Episode 4</a><small>2,300 view</small></div>
-                        </li>
-                        <li class="hvr-bounce-to-right"><img src="http://placehold.it/162x82" alt="" />
-                            <div class="main__watch-suggest-episode"> <a href="">Episode 5</a><small>2,300 view</small></div>
-                        </li>
-                        <li class="hvr-bounce-to-right"><img src="http://placehold.it/162x82" alt="" />
-                            <div class="main__watch-suggest-episode"> <a href="">Episode 6</a><small>2,300 view</small></div>
-                        </li>
-                        <li class="hvr-bounce-to-right"><img src="http://placehold.it/162x82" alt="" />
-                            <div class="main__watch-suggest-episode"> <a href="">Episode 7</a><small>2,300 view</small></div>
-                        </li>
-                        <li class="hvr-bounce-to-right"><img src="http://placehold.it/162x82" alt="" />
-                            <div class="main__watch-suggest-episode"> <a href="">Episode 8</a><small>2,300 view</small></div>
-                        </li>
-                        <li class="hvr-bounce-to-right"><img src="http://placehold.it/162x82" alt="" />
-                            <div class="main__watch-suggest-episode"> <a href="">Episode 9</a><small>2,300 view</small></div>
-                        </li>
-                        <li class="hvr-bounce-to-right"><img src="http://placehold.it/162x82" alt="" />
-                            <div class="main__watch-suggest-episode"> <a href="">Episode 10</a><small>2,300 view</small></div>
-                        </li>
-                        <li class="hvr-bounce-to-right"><img src="http://placehold.it/162x82" alt="" />
-                            <div class="main__watch-suggest-episode"> <a href="">Episode 11</a><small>2,300 view</small></div>
-                        </li>
-                        <li class="hvr-bounce-to-right"><img src="http://placehold.it/162x82" alt="" />
-                            <div class="main__watch-suggest-episode"> <a href="">Episode 12</a><small>2,300 view</small></div>
-                        </li>
-                        <li class="hvr-bounce-to-right"><img src="http://placehold.it/162x82" alt="" />
-                            <div class="main__watch-suggest-episode"> <a href="">Episode 13</a><small>2,300 view</small></div>
-                        </li>
-                        <li class="hvr-bounce-to-right"><img src="http://placehold.it/162x82" alt="" />
-                            <div class="main__watch-suggest-episode"> <a href="">Episode 14</a><small>2,300 view</small></div>
-                        </li>
-                        <li class="hvr-bounce-to-right"><img src="http://placehold.it/162x82" alt="" />
-                            <div class="main__watch-suggest-episode"> <a href="">Episode 15</a><small>2,300 view</small></div>
-                        </li>
-                        <li class="hvr-bounce-to-right"><img src="http://placehold.it/162x82" alt="" />
-                            <div class="main__watch-suggest-episode"> <a href="">Episode 16</a><small>2,300 view</small></div>
-                        </li>
-                        <li class="hvr-bounce-to-right"><img src="http://placehold.it/162x82" alt="" />
-                            <div class="main__watch-suggest-episode"> <a href="">Episode 17</a><small>2,300 view</small></div>
-                        </li>
-                        <li class="hvr-bounce-to-right"><img src="http://placehold.it/162x82" alt="" />
-                            <div class="main__watch-suggest-episode"> <a href="">Episode 18</a><small>2,300 view</small></div>
-                        </li>
-                        <li class="hvr-bounce-to-right"><img src="http://placehold.it/162x82" alt="" />
-                            <div class="main__watch-suggest-episode"> <a href="">Episode 19</a><small>2,300 view</small></div>
-                        </li>
-                        <li class="hvr-bounce-to-right"><img src="http://placehold.it/162x82" alt="" />
-                            <div class="main__watch-suggest-episode"> <a href="">Episode 20</a><small>2,300 view</small></div>
+                        <li class="hvr-bounce-to-right " ng-repeat="video in data">
+                            <div class="list-video clearfix">
+                                <img src="img/{{video.img}}.jpg" alt="" width="100%"/>
+                            </div>
+                            
+                            <div class="main__watch-suggest-episode"> <a href="">{{video.name}}</a><small>2,300 view</small></div>
                         </li>
                     </ul>
                 </div>

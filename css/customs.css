@@ -23,3 +23,10 @@
 .main__watch {
   margin-top: 100px;
 }
+
+.list-video {
+  overflow: hidden;
+  height: 82px;
+  width: 162px;
+  float: left;
+}
