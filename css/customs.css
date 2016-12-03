@@ -34,3 +34,7 @@
 .list-episode-next {
   overflow: hidden;
 }
+
+.active {
+  color: #ed215e;
+}

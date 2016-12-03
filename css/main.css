@@ -166,7 +166,7 @@ button:focus
 
     content: '';
 
-    background: linear-gradient(to top, #1d4350, rgba(164,57,49,.66));
+    background: linear-gradient(to top, #1d4350, rgba(164, 57, 49, 0.36));
 }
 .header .wrapper
 {
