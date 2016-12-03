@@ -20,9 +20,9 @@ app.config(function ($stateProvider) {
     }
     
     var aboutState = {
-        name: 'lab',
-        url: '/lab',
-        templateUrl: 'app/views/weblab.html'
+        name: 'about',
+        url: '/about',
+        templateUrl: 'app/views/webabout.html'
     }
 
     $stateProvider.state(homeState);
