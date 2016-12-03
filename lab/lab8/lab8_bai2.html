@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>lab8_bai1</title>
+	<meta charset="utf-8">
+	<script type="text/javascript">
+		var s="HTML & JAVASCRIPT";
+		var a=new Array();
+		for(i=0;i<s.length;i++)
+		{
+			var j=0;
+			while(j<a.length)
+			{
+				if((a[j]==s.charAt(i)) || (s.charAt(i)==" "))
+					break;
+				j++;
+			}
+			if(j==a.length) 
+				a.push(s.charAt(i));
+		}
+		alert("Số ký tự khác nhau là " + a.length + " : " + a.toString());
+	</script>
+</head>
+<body>
+
+</body>
+</html>

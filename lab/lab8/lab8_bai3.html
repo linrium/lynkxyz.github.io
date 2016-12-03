@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>bai8_lab3</title>
+	<meta charset="utf-8">
+	<script type="text/javascript">
+		function songaunhien1()
+		{
+			document.getElementById("txt1").value = parseInt(Math.random()*100);
+		}
+		function songaunhien2()
+		{
+			document.getElementById("txt2").value = parseInt(Math.random()*100);
+		}
+		function kq()
+		{
+			a=document.getElementById("txt1").value;
+			b=document.getElementById("txt2").value;
+			if (document.getElementById("txtKQ").value == parseFloat(a)+parseFloat(b))
+			{
+				document.getElementById("lbl").innerHTML="Đúng";
+				document.getElementById("lbl").style.color="#0f0";
+				
+			}
+			else 
+			{
+				document.getElementById("lbl").innerHTML="Sai";
+				document.getElementById("lbl").style.color="red";
+			}
+		}
+	</script>
+</head>
+<body>
+<form id="frm" name="frm">
+	<label></label>
+	<table border="0" cellspacing="3">
+		<tr>
+			<td width="100">Số 1:</td>
+			<td width="165"><input type="text" name="txt1" id="txt1" disabled="disabled"></td>
+		</tr>
+		<tr>
+			<td width="95">&nbsp;</td>
+			<td align="center"><font size="+2"><b>+</b></font></td>
+		</tr>
+		<tr>
+			<td width="95">Số 2:</td>
+			<td width="165"><input type="text" name="txt2" id="txt2" disabled="disabled"></td>
+		</tr>
+		<tr>
+			<td width="95">Số 1 + Số 2 =</td>
+			<td><input type="text" name="txtKQ" id="txtKQ"></td>
+		</tr>
+		<tr>
+			<td colspan="2" align="center">
+				<button type="button" style="margin-left: 80px;" onclick="songaunhien1(),songaunhien2()" >Bài mới</button>&nbsp;&nbsp;&nbsp;
+				<button type="button" style="" onclick="kq()">Kết quả</button>
+			</td>
+		</tr>
+		<tr>
+			<td width="95">Kết quả: </td>
+			<td align="center"><label id="lbl" style="text-align: left;">&nbsp;</label></td>
+		</tr>
+
+	</table>
+</form>
+</body>
+</html>
