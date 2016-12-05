@@ -31,6 +31,14 @@ app.config(function ($stateProvider) {
     $stateProvider.state(aboutState);
 });
 
+app.factory('Page', function() {
+   var title = 'Webmovie';
+   return {
+     title: function() { return title; },
+     setTitle: function(newTitle) { title = newTitle }
+   };
+});
+
 app.controller('NavController', function ($scope, $location, $anchorScroll) {
     $scope.scrollTo = function(id) {
       $location.hash(id);
