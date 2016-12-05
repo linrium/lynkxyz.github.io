@@ -59,6 +59,7 @@ app.controller('NavController', function ($scope, $location, $anchorScroll) {
 });
 
 app.controller('MainController', function ($scope, $rootScope, $state) {
+    console.log($state.current.data.title);
     $rootScope.data = [
         {
             name: "One Piece",
