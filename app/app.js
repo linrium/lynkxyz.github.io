@@ -39,7 +39,6 @@ app.controller('NavController', function ($scope, $location, $anchorScroll) {
 });
 
 app.controller('MainController', function ($scope, $rootScope, $state) {
-    $rootScope.title = 'Webmovie - Main page'
     $rootScope.data = [
         {
             name: "One Piece",
@@ -316,7 +315,6 @@ app.controller('MainController', function ($scope, $rootScope, $state) {
 });
 
 app.controller('ViewController', function ($scope, $rootScope, $state, youtubeEmbedUtils) {
-    $rootScope.title = 'Webmovie - View page'
     $scope.video = {};
     $scope.episode = [2300,4500,1500,560,360,980,1400,630,890,750,742];
     function checkMovie(id) {
