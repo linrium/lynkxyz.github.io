@@ -4,25 +4,37 @@ app.config(function ($stateProvider) {
     var homeState = {
         name: 'home',
         url: '/',
-        templateUrl: 'app/views/webmain.html'
+        templateUrl: 'app/views/webmain.html',
+        data: {
+            title: 'Webmovie - The best website of watching anime'
+        }
     }
 
     var movieState = {
         name: 'movie',
         url: '/movie/:id',
-        templateUrl: 'app/views/webview.html'
+        templateUrl: 'app/views/webview.html',
+        data: {
+            title: 'Webmovie - Watch Anime Online'
+        }
     }
     
     var labState = {
         name: 'lab',
         url: '/lab',
-        templateUrl: 'app/views/weblab.html'
+        templateUrl: 'app/views/weblab.html',
+        data: {
+            title: 'Webmovie - Lab TH NM Web'
+        }
     }
     
     var aboutState = {
         name: 'about',
         url: '/about',
-        templateUrl: 'app/views/webabout.html'
+        templateUrl: 'app/views/webabout.html',
+        data: {
+            title: 'Webmovie - About Page'
+        }
     }
 
     $stateProvider.state(homeState);
