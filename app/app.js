@@ -36,11 +36,21 @@ app.config(function ($stateProvider) {
             title: 'Webmovie - About Page'
         }
     }
+    
+    var pagenotfoundState = {
+        name: '404',
+        url: '/pagenotfound',
+        templateUrl: 'app/views/404.html',
+        data: {
+            title: 'Webmovie - Watch Anime Online'
+        }
+    }
 
     $stateProvider.state(homeState);
     $stateProvider.state(movieState);
     $stateProvider.state(labState);
     $stateProvider.state(aboutState);
+    $stateProvider.state(pagenotfoundState);
 });
 
 app.factory('Page', function() {
