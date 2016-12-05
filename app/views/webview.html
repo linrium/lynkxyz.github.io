@@ -12,10 +12,12 @@
             <div class="main__watch-episode">
                 <ul>
                     <li class="hvr-bounce-to-right list-episode-next" ng-repeat="item in episode track by $index">
-                        <div class="list-video clearfix">
+                        <a ui-sref="404" ui-sref-active="active">
+                            <div class="list-video clearfix">
                             <img ng-src="img/{{video.img}}.jpg" width="100%" alt=""/>
-                        </div>
-                        <div class="main__watch-suggest-episode"> <a href="">Episode {{$index}}</a><small>{{item}} view</small></div>
+                            </div>
+                            <div class="main__watch-suggest-episode"> <a href="">Episode {{$index}}</a><small>{{item}} view</small></div>
+                        </a>
                     </li>
                 </ul>
             </div>
