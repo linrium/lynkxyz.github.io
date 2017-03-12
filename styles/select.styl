@@ -1,0 +1,32 @@
+.Select-control
+  border-radius 0
+  height 45px
+  border-color rgba(120, 130, 140, 0.2) !important
+  box-shadow none !important
+
+  .Select-placeholder
+    line-height 45px
+
+  .Select-value
+    border-radius 0
+    padding 5px
+    margin 5px
+    color black
+    border-color #eee
+    background #eee
+    transition all 0.3s ease-in-out
+    &:hover
+      background $red-10
+      border 1px solid $red-10
+  
+  .Select-input
+    > input
+      line-height 25px
+
+  .Select-value-icon
+    border-right 0
+    &:hover
+      background none
+
+.is-focused
+  border-color white !important

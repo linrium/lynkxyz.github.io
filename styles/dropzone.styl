@@ -1,0 +1,38 @@
+.dropzone
+  &--avatar
+    height 200px
+    width 200px
+    border-radius 50%
+    margin 0 auto
+    border 2px dashed #66d7e6
+    transition all 0.3s ease-in-out
+    position relative
+    cursor pointer
+    &:hover
+      border-color #00bcd4
+
+  &--tool
+    width 100px
+    margin 20px auto
+
+  &--preview
+    position absolute
+    height 196px
+    border-radius 50%
+    width 196px
+    top 0
+    left 0
+    overflow hidden
+    img
+      width 100%
+
+  &--clear
+    text-align center
+    margin-top 10px
+
+.avatar
+  &--show
+    max-height 100px
+    overflow hidden
+    img
+      width 100%
